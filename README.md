@@ -26,5 +26,8 @@ Education: Applied Mathematics
 # Diagnostics of the learning process
 # Communication
 # Python Notebooks
+
+[a relative link](other_file.md)
+
 # Experiments
 # Other Achievements
