@@ -1,3 +1,4 @@
 # APD-Minor-Portfolio---Eric-Maat  
-Studentnummer: 20162928  
-Opleiding: Toegepaste Wiskunde  
+Studentnumber: 20162928  
+Education: Applied Mathematics  
+# Table of Contents  
