@@ -15,6 +15,7 @@ Education: Applied Mathematics
 - [Other Achievements](#Other-Achievements)
 
 # Courses
+
 # Domain Knowledge
 # Data Preparation
 # Data Visualization
