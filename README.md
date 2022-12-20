@@ -16,6 +16,8 @@ Education: Applied Mathematics
 
 # Courses
 
+![This is a alt text.](/Images/Datacamp Eric.png "This is a sample image.")
+
 # Domain Knowledge
 # Data Preparation
 # Data Visualization
