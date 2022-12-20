@@ -27,7 +27,7 @@ Education: Applied Mathematics
 # Communication
 # Python Notebooks
 
-[a relative link](/Python%20Notebooks/Score%20Functie%20Ding.ipynb)
+[Dit is een notebook](/Python%20Notebooks/Score%20Functie%20Ding.ipynb)
 
 # Experiments
 # Other Achievements
