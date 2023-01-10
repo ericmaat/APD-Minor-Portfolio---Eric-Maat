@@ -25,7 +25,11 @@ The first project I worked on was in regards of the Food Boost case. The case fo
 
 Our group of six (which we called "The Human Machine Teachers") tried to set a research goal where we could use multiple methods. We decided on the following research goal:  
 
-**What method could be used to create a week schedule consisting of lunch and diner recipes while taking calorie intake and nut allergy into account.**
+**"What method could be used to create a week schedule consisting of lunch and diner recipes while taking calorie intake and nut allergy into account."**  
+
+The week schedule mentioned here consists of 14 recipes (7 lunches and 7 diners). For this research we limited the schedule to only provide lunch and diner recipes, because only these two types of recipes were both relevant and provide sufficient data.  
+
+We chose a research goal with this many elements and restrictions, because there are many steps and methods needed to reach the end goal. This requires us to delve into different areas of knowledge, which helps us get familiar with multiple methods and data processes. Using only lunch and diner recipes which contain no nuts requires data preparation. To predict wether a person likes certain recipes or not we can make great use of Data Science. To create an optimal recipe schedule we could make great use of linear programming.
 
 # Domain Knowledge
 
