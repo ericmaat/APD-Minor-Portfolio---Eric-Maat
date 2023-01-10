@@ -21,7 +21,11 @@ Education: Applied Mathematics
 
 # Research Projects
 ## Food Boost
-The first project I worked on was in regards of the Food Boost case. The case focuses on eating more sustainable and healthy and peoples personal preferences towards such recipes.
+The first project I worked on was in regards of the Food Boost case. The case focuses on eating more sustainable and healthy dishes and people's personal preferences towards such recipes. In this case it is possible to apply multiple methods. For example, Data Science could be used to predict wether a person likes a certain recipe or not, statistics could be used to estimate which ingredients a person likes or findig optimal combinations of recipes with the use of linear programming.  
+
+Our group of six (which we called "The Human Machine Teachers") tried to set a research goal where we could use multiple methods. We decided on the following research goal:  
+
+**What method could be used to create a week schedule consisting of lunch and diner recipes while taking calorie intake and nut allergy into account.**
 
 # Domain Knowledge
 
