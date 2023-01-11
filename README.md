@@ -43,12 +43,15 @@ We based our models on the food opinions of a group mate. He ended up liking 180
 Linear programming was used for creating the week schedule by having restrictions based on the energy of each chosen recipe. In the future we could involve nutritients besides energy, like fat or protein. This would add more restrictions to the model, but make for a more balanced recipe schedule.
 
 ### Conclusions
+<details><summary> Model performances </summary>
+
 | Classifier Models   | Precision | Recall | Accuracy |
 | ------------------- |:---------:|:------:|:--------:|
 | Decision Tree       | 0.83      | 0.88   | 0.74     |
 | Logistic Regression | 0.83      | 0.71   | 0.66     |
 | K-Nearest Neighbors | 0.78      | 0.60   | 0.55     |
 
+</details>
 
 # Domain Knowledge
 
