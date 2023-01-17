@@ -93,6 +93,11 @@ We have also set up a Trello Board where we would add multiple tasks, big or sma
 
 ### Planning
 
+<details>
+<summary>Trello board Cofano screenshot</summary>
+<img src="Images/TrelloBoardCof.png" />
+</details>
+
 # Predictive Analytics
 
 ## Model Selection
