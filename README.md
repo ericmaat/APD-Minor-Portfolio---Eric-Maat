@@ -4,7 +4,7 @@ Education: Applied Mathematics
 # <a id="table-of-contents"></a>Table of Contents <!-- omit in toc --> 
 - [DataCamp Courses](#DataCamp-Courses)
 - [Research Projects](#Research-Projects)
-  - [Food Boost](##Food-Boost)
+  - [Food Boost](#Food-Boost)
 - [Domain Knowledge](#Domain-Knowledge)
 - [Communication](#Communication)
 - [Python Notebooks](#Python-Notebooks)
