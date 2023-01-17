@@ -20,7 +20,7 @@ Education: Applied Mathematics
   - [Data Cleansing](#Data-Cleansing)
   - [Data Preparation](#Data-Preparation)
   - [Data Explanation](#Data-Explanation)
-  - [Data Visualization](#Data-Vizualization)
+  - [Data Visualization](#Data-Visualization)
 - [Communication](#Communication)
   - [Presentations](#Presentations)
   - [Writing Paper](#Writing-Paper)
