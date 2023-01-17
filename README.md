@@ -3,7 +3,7 @@ Studentnumber: 20162928
 Education: Applied Mathematics  
 # <a id="table-of-contents"></a>Table of Contents <!-- omit in toc --> 
 - [DataCamp Courses](#DataCamp-Courses)
-- [Food Boost](##Food-Boost)
+  - [Food Boost](##Food-Boost)
 - [Research Projects](#Research-Projects)
 - [Domain Knowledge](#Domain-Knowledge)
 - [Communication](#Communication)
