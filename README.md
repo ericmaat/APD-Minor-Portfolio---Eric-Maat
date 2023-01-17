@@ -39,7 +39,7 @@ The first project I worked on was in regards of the Food Boost case. The case fo
 
 Our group of six (which we called "The Human Machine Teachers") tried to set a research goal where we could use multiple methods. We decided on the following research goal:  
 
-**"What method could be used to create a week schedule consisting of lunch and diner recipes while taking calorie intake and nut allergy into account."**  
+**"What method(s) could be used to create a week schedule consisting of lunch and diner recipes while taking calorie intake and nut allergy into account."**  
 
 The week schedule mentioned here consists of 14 recipes (7 lunches and 7 diners). For this research we limited the schedule to only provide lunch and diner recipes, because only these two types of recipes were both relevant and provide sufficient data.  
 
@@ -66,7 +66,16 @@ Linear programming was used for creating the week schedule by having restriction
 
 </details>
 
+The classification models with the highest precision seem to be the Decision Tree and Logistic Regression. To determine which one is best suited we will also look at the accuracy of the models. The Decison Tree classifier performs better in this regard, which means it is the best method to use for classifying recipes.
+
 ### Planning
+
+For the six weeks we spent on the FoodBoost project we planned to have three group meetings every week. On Monday, Wednesday and Friday. These meetings would involve anything regarding both individual and shared tasks, team co-operation, short-term planning, deadlines, etc. We also held work sessions on days without either lectures or meetings. These were on Tuesday and Thursday where we would make time to work on the project for at least five hours a day.
+
+We have also set up a Trello Board where we would add multiple tasks, big or small, and distribute these over the team. At the meetings we would discuss what is on the board and would add tasks when necessary. The goal of this method was to have a task for everyone at the end of every meeting. The majority of these tasks had deadlines to ensure that people wouldn't stick to just having one task for a longer period of time.
+
+<details><summary> Trello Board FoodBoost </summary>
+</details>
 
 ## Cofano Containers
 
@@ -81,6 +90,9 @@ Linear programming was used for creating the week schedule by having restriction
 # Predictive Analytics
 
 ## Model Selection
+
+FoodBoost: 3 classifiers
+Cofano: Reinforcement Learning
 
 ## Model Configuration
 
