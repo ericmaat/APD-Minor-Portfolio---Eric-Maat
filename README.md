@@ -39,17 +39,17 @@ The first project I worked on was in regards of the Food Boost case. The case fo
 
 Our group of six (which we called "The Human Machine Teachers") tried to set a research goal where we could use multiple methods. We decided on the following research goal:  
 
-**"What method(s) could be used to create a week schedule consisting of lunch and diner recipes while taking calorie intake and nut allergy into account?"**  
-_**1.** Which ingredients make a recipe be considered a nut allergen?_  
-_**2.** What is a healthy amount of calories for one lunch and one dinner?_  
-_**3.** What method(s) can be used to predict wether a person likes a recipe or not?_  
-_**4.** What method(s) can be used to make a varying week schedule of lunches and diners?_  
+**"What method(s) can be used to create a week schedule consisting of lunch and diner recipes while taking calorie intake and nut allergy into account?"**  
+_"**1.** Which ingredients make a recipe be considered a nut allergen?"_  
+_"**2.** What is a healthy amount of calories for one lunch and one dinner?"_  
+_"**3.** What method(s) can be used to predict wether a person likes a recipe or not?"_  
+_"**4.** What method(s) can be used to make a varying week schedule of lunches and diners?"_  
 
 The week schedule mentioned here consists of 14 recipes (7 lunches and 7 diners). For this research we limited the schedule to only provide lunch and diner recipes, because only these two types of recipes were both relevant and provide sufficient data.  
 
 We chose a research goal with this many elements and restrictions, because there are many steps and methods needed to reach the end goal. This requires us to delve into different areas of knowledge, which helps us get familiar with multiple methods and data processes. Using only lunch and diner recipes which contain no nuts requires data preparation. To predict wether a person likes certain recipes or not we can make great use of Data Science. To create an optimal recipe schedule we could make great use of linear programming.
 
-### Evaluation
+### Future Works
 
 Even though the project would eventually last only six weeks, a lot of progress was made regarding the data preprocessing, predictive analysis and Operational Research. Naturally, there is still room for improvement.  
 
@@ -84,10 +84,23 @@ We have also set up a Trello Board where we would add multiple tasks, big or sma
 </details>
 
 ## Cofano Containers
-
 ### Task Definition
 
-### Evaluation
+The second project I worked on was in regards of the Cofano Case. This case focuses on the transport of containers from the yard of a terminal to a container ship and vice versa. This transport on the terminal will be handled by a reach stacker. Cofano wants to know what methods could be used to fix the container stacking problem where the end goal is to minimize the cost and delay of the whole proces. There is need for a method that organizes the container stacks on the yard in such a way that minimizes the amount of moves it takes to get certain containers to the ship. This problem can be formulated as an optimization problem where heuristics can be applied to solve it.
+
+Our first research goal covered too much of the main problem to solve it in fourteen weeks, so we agreed on the following research goal:
+
+**"What method(s) can be used to solve the ship to container yard part of the container stacking problem using only a reach stacker?"**  
+_"**1.** What method(s)/heuristic(s) have been used to solve the container stacking problem in the past?"_  
+_"**2.** What defines a move?"_  
+_"**3.** What are the restrictions?"_  
+_"**4.** What type of containers are transported?"_  
+_"**5.** What is the lay-out of the yard?"_  
+_"**6.** How can we simulate container ship data?"_  
+
+Question 1 will introduce us to the most used methods for this problem and how to apply those step by step. Questions 2 to 5 are needed to define the context and environment of the situation that we want to optimize. It is important here to keep in mind that we can only use one reach stacker. Question 6 will use the answers on the previous questions to provide the data we can use in conjunction with the chosen method.
+
+### Future Works
 
 ### Conclusions
 
