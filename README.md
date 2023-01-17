@@ -74,9 +74,8 @@ For the six weeks we spent on the FoodBoost project we planned to have three gro
 
 We have also set up a Trello Board where we would add multiple tasks, big or small, and distribute these over the team. At the meetings we would discuss what is on the board and would add tasks when necessary. The goal of this method was to have a task for everyone at the end of every meeting. The majority of these tasks had deadlines to ensure that people wouldn't stick to just having one task for a longer period of time.
 
-<details><summary> Trello Board FoodBoost </summary>
 ![This is a alt text.](/Images/TrelloBoardFB.png "Trello Board FoodBoost")
-</details>
+
 
 ## Cofano Containers
 
