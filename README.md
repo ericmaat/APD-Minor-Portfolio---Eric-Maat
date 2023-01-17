@@ -39,7 +39,11 @@ The first project I worked on was in regards of the Food Boost case. The case fo
 
 Our group of six (which we called "The Human Machine Teachers") tried to set a research goal where we could use multiple methods. We decided on the following research goal:  
 
-**"What method(s) could be used to create a week schedule consisting of lunch and diner recipes while taking calorie intake and nut allergy into account."**  
+**"What method(s) could be used to create a week schedule consisting of lunch and diner recipes while taking calorie intake and nut allergy into account?"**
+_**1.** Which ingredients make a recipe be considered a nut allergen?_
+_**2.** What is a healthy amount of calories for one lunch and one dinner?_
+_**3.** What method(s) can be used to predict wether a person likes a recipe or not?_
+_**4.** What method(s) can be used to make a varying week schedule of lunches and diners?_
 
 The week schedule mentioned here consists of 14 recipes (7 lunches and 7 diners). For this research we limited the schedule to only provide lunch and diner recipes, because only these two types of recipes were both relevant and provide sufficient data.  
 
