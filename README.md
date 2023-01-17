@@ -102,6 +102,18 @@ Question 1 will introduce us to the most used methods for this problem and how t
 
 ### Future Works
 
+We have worked on this project for twelve weeks and achieved a lot in that time. However, our research only covered a part of Cofano's container stacking problem. This means there is still room for future work and improvements.  
+
+The methods and models we applied were all used on a yard that was always empty at the beginning of an episode. In reality, the yard always contains some containers, so we could have tried to apply our model on a yard that is already partially filled with containers at the beginning of every episode. We could make a selection of containers that is randomly placed at the start of each episode to see how the model would (try to) adapt to this situation.  
+
+During the project, our goal was to have the model fill the whole yard with containers until there is no space left. In reality, not all the space in a yard is used up when unloading just one ship. We could have used more yard space or smaller ships to unload to have the model try to find optimal stacks that do not use up all the avaible space on a yard.
+
+The orginized stacks that our models end up with are optimal as long as the ships the containers are loaded in all arrive on schedule.
+
+reach stacker route limitations
+
+loading from yard to ship
+
 ### Conclusions
 
 ### Planning
