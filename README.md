@@ -60,11 +60,28 @@ We based our models on the food opinions of a group mate. He ended up liking 180
 Linear programming was used for creating the week schedule by having restrictions based on the energy of each chosen recipe. In the future we could involve nutritients besides energy, like fat or protein. This would add more restrictions to the model, but make for a more balanced recipe schedule.
 
 ### Conclusions
-_"**1.** Which ingredients make a recipe be considered a nut allergen?"_  
-  
+_**"1. Which ingredients make a recipe be considered a nut allergen?"**_  
+
+<details><summary> List of forbidden nut strings </summary>
 * "noot"
 * "pinda"
-* "eikel"* "amandel"
+* "eikel"
+* "amandel"
+* "cashew"
+* "hazelno"
+* "hican"
+* "hickory"
+* "kemirie"
+* "macadamia"
+* "nangaino"
+* "parano"
+* "pecan"
+* "pistache"
+* "kastanje"
+* "walnoot"
+* "betelno"
+* "beukenno"
+</details>
 
 <details><summary> Model performances </summary>
 
