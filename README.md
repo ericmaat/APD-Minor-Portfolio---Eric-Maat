@@ -82,6 +82,8 @@ For this we also had to keep in account eventual false positives. For example, "
 falsePositives = ["muskaat"]
 ```
 
+</details>
+
 _**"2. What is a healthy amount of calories for one lunch and one dinner?"**_  
 
 After my teammates had done there research on this topic, they came to the conclusion that a healthy amount of one lunch and one dinner together is 1040 Kcal. This answer would help make the restrictions for the linear programming model.  
@@ -89,8 +91,6 @@ After my teammates had done there research on this topic, they came to the concl
 _**"3. What method(s) can be used to predict wether a person likes a recipe or not?"**_  
 
 After following the DataCamp courses and having some lectures about machine learning, we concluded that a classifier would work best to answer this question. We chose three classifiers and after tuning the hyperparameters we wrote down the resulting scores of each of them.  
-
-</details>
 
 <details><summary> Model performances </summary>
 
@@ -160,19 +160,56 @@ _**"1. What method(s)/heuristic(s) have been used to solve the container stackin
 
 I have found several articles on heuristic methods. Some used there own version on a Linear Programming method, others used a certain "GRASP algorithm" to tackle the problem. All of those were methods that could be applied with the big amount of constraints the container stacking problem introduced. After a while, we found out that reinforcement learning was a popular approach for these kind of problems. We delved deeper into what this method was about and then decided we wanted to use this for our final model.  
 
-_"**2.** What defines a move?"_  
+_**"2. What defines a move?"**_  
 
 We defined a "move" as placing a container from the ship onto the container yard on the terminal. We decided not to take time into account for this.  
 
-_**"3. What are the restrictions?"**_  
+_**"3. What are the restrictions?"**_   
 
-* A container can not be placed on a space where a previous container is placed
-* A container can not be placed on a space where there is no ground or other container beneath it
-* A container can not be placed on top of a stack that has already reached its max height
-* A container can not be placed outside of the container yard
-* A container can not be placed between two existing stacks
+<details>
+<summary>A container can not be placed on a space where a previous container is placed</summary>
+<img src="Images/restrict2.png" width="400"/>
+</details>
+
+<details>
+<summary>A container can not be placed on a space where there is no ground or other container beneath it</summary>
+<img src="Images/restrict1.png" width="400"/>
+</details>
+
+<details>
+<summary>A container can not be placed on top of a stack that has already reached its max height</summary>
+<img src="Images/restrict3.png" width="400"/>
+</details>
+
+<details>
+<summary>A container can not be placed outside of the container yard</summary>
+<img src="Images/restrict4.png" width="400"/>
+</details>
+
+<details>
+<summary>A container can not be placed between two existing stacks</summary>
+<img src="Images/restrict5.png" width="400"/>
+</details>
+
+_**"4. What type of containers are transported?"**_  
+
+To not overcomplicate things and make the problem too complex, we decided that every container has the same size and weight. The only thing that can distinguish containers is which ship they will eventually be loaded in.  
+
+_**"5. What is the lay-out of the yard?"**_  
+
+We decided to have a customizable yard that is always empty at the beginning of a game. For the final product we have a container yard of 4x4x5 spaces. This translates to a space for exactly 80 containers.  
+
+_**"6. How can we simulate container ship data?"**_  
+
+To simulate a ship full of containers that have to be transported we created a list of random numbers between 1 and 3 (container with 1 has the highest priority and 3 has the lowest). There were as many numbers in this list as there are spaces on the yard. The order of these numbers was random each episode.
 
 ### Planning
+
+For the twelve weeks we spent on the Cofano container case, we kept the schedule we used for the weeks we spent on the FoodBoost case with some slight adjustments. Halfway through this time period we dropped the meeting on wednesday, because at that time there were less to discuss. The wednesday became a work session day instead.  
+
+There was also planned to put more focus on the individual work of each teammate. We planned to have two weeks where each one of us worked separately on their own Reinforcement Learning model. This way, every teammate had to put work into the project and our individual contributions could be used to improve the final model.  
+
+We also created a new Trello Board for this project. The structure mostly stayed the same compared to the one used for the FoodBoost project, but this time we assigned people to certain categories. This meant that each teammate was responsible for the tasks of their assigned category. This way everyone could fullfil at least one roll in the project.  
 
 <details>
 <summary>Trello board Cofano screenshot</summary>
@@ -198,7 +235,7 @@ Cofano: Reinforcement Learning
 # Domain Knowledge
 
 ## Subject Field Introduction
-The first project I worked on was in regards of the Food Boost case. The goal was to create a week schedule consisting of lunch and diner recipes (seven lunches and seven diners, so fourteen recipes in total) for a person who is allergic to nuts. Our research focused heavily on predicting wether a person likes a recipe or not. In this field, it is most important to reduce predictions which classify a recipe as 'liked', while in reality the person disliked the recipe (In our case, False Positives). Though it is also favorable to reduce prediction errors that fall into the False Negative category (especially if the person is a picky eater), such errors do not necessarily affect a good recipe schedule. It is worse to have disliked recipes show up on the schedule than missing out on some recipes that the person might have liked.  
+Our research focused heavily on predicting wether a person likes a recipe or not. In this field, it is most important to reduce predictions which classify a recipe as 'liked', while in reality the person disliked the recipe (In our case, False Positives). Though it is also favorable to reduce prediction errors that fall into the False Negative category (especially if the person is a picky eater), such errors do not necessarily affect a good recipe schedule. It is worse to have disliked recipes show up on the schedule than missing out on some recipes that the person might have liked.  
 
 ## Literature Research
 
