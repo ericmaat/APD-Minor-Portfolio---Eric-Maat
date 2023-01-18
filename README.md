@@ -62,9 +62,11 @@ Linear programming was used for creating the week schedule by having restriction
 ### Conclusions
 _**"1. Which ingredients make a recipe be considered a nut allergen?"**_  
 
+<details><summary> List of forbidden nut strings </summary>
 ```
 notenLijst = ["noot","pinda","eikel","amandel","cashew","hazelno","hican","hickory","kemirie","macadamia","nangaino","parano","pecan","pistache","kastanje","walnoot","betelno","beukenno"]
 ```
+</details>
 
 <details><summary> Model performances </summary>
 
