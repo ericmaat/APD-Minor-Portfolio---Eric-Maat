@@ -62,10 +62,34 @@ Linear programming was used for creating the week schedule by having restriction
 ### Conclusions
 _**"1. Which ingredients make a recipe be considered a nut allergen?"**_  
 
-<details><summary> List of forbidden nut strings </summary>
+To answer this question we searched for a way to determine if a specific ingredient contained nuts or not. Instead of using going by every ingredient in the dataset, we created a list of strings where if an ingredient of a recipe contained one of these strings, the recipe itself would be considered as a nut allergen.
+
+<details>
+<summary> List of forbidden nut strings </summary>
+
 ```
 notenLijst = ["noot","pinda","eikel","amandel","cashew","hazelno","hican","hickory","kemirie","macadamia","nangaino","parano","pecan","pistache","kastanje","walnoot","betelno","beukenno"]
 ```
+
+</details>
+
+For this we also had to keep in account eventual false positives. For example, "nootmuskaat" contains the string "noot", but this ingredient does not make a recipe a nut allergen. For these cases a list was created of strings that surpass the previous checklist.
+
+<details>
+<summary> List of false positives </summary>
+
+```
+falsePositives = ["muskaat"]
+```
+
+_**"2. What is a healthy amount of calories for one lunch and one dinner?"**_  
+
+After my teammates had done there research on this topic, they came to the conclusion that a healthy amount of one lunch and one dinner together is 1040 Kcal. This answer would help make the restrictions for the linear programming model.  
+
+_**"3. What method(s) can be used to predict wether a person likes a recipe or not?"**_  
+
+After following the DataCamp courses and having some lectures about machine learning, we concluded that a classifier would work best to answer this question. We chose three classifiers and after tuning the hyperparameters we wrote down the resulting scores of each of them.  
+
 </details>
 
 <details><summary> Model performances </summary>
@@ -78,7 +102,17 @@ notenLijst = ["noot","pinda","eikel","amandel","cashew","hazelno","hican","hicko
 
 </details>
 
-The classification models with the highest precision seem to be the Decision Tree and Logistic Regression. To determine which one is best suited we will also look at the accuracy of the models. The Decison Tree classifier performs better in this regard, which means it is the best method to use for classifying recipes.
+The classification models with the highest precision seem to be the Decision Tree and Logistic Regression. To determine which one is best suited we will also look at the accuracy of the models. The Decison Tree classifier performs better in this regard, which means it is the best method to use for classifying recipes.  
+
+_**"4. What method(s) can be used to make a varying week schedule of lunches and diners?"**_  
+
+A Linear Programming model was used to create the schedule. After the chosen classifier created a list of liked recipes, the LP model would choose 7 lunches and 7 diners and create a week schedule. The restrictions this model followed were:  
+* A recipe can only appear in the week schedule once
+* Exactly one lunch each day
+* Exactly one diner each day
+* The maximum amount of calories per day is 1040
+
+The model tries to maximize the amount of calories for each day. By having the last restriction it will never exceed 1040 Kcal, but will try to get as high as possible.
 
 ### Planning
 
@@ -121,6 +155,22 @@ The orginized stacks that our models end up with are optimal as long as the ship
 Having the least amount of boxed in containers in the yard lay-out is our top priority, but our model doesn't take into account the time it takes for the reach stacker to go from a container it just placed to the next. In the future we could try to focus more on these limitations to prevent eventual delay. This could be done by starting the lay-out of half of the containers at one side of the yard before placing the other half of the load on the other side.
 
 ### Conclusions
+
+_**"1. What method(s)/heuristic(s) have been used to solve the container stacking problem in the past?"**_  
+
+I have found several articles on heuristic methods. Some used there own version on a Linear Programming method, others used a certain "GRASP algorithm" to tackle the problem. All of those were methods that could be applied with the big amount of constraints the container stacking problem introduced. After a while, we found out that reinforcement learning was a popular approach for these kind of problems. We delved deeper into what this method was about and then decided we wanted to use this for our final model.  
+
+_"**2.** What defines a move?"_  
+
+We defined a "move" as placing a container from the ship onto the container yard on the terminal. We decided not to take time into account for this.  
+
+_**"3. What are the restrictions?"**_  
+
+* A container can not be placed on a space where a previous container is placed
+* A container can not be placed on a space where there is no ground or other container beneath it
+* A container can not be placed on top of a stack that has already reached its max height
+* A container can not be placed outside of the container yard
+* A container can not be placed between two existing stacks
 
 ### Planning
 
