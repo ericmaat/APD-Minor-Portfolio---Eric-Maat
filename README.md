@@ -60,6 +60,12 @@ We based our models on the food opinions of a group mate. He ended up liking 180
 Linear programming was used for creating the week schedule by having restrictions based on the energy of each chosen recipe. In the future we could involve nutritients besides energy, like fat or protein. This would add more restrictions to the model, but make for a more balanced recipe schedule.
 
 ### Conclusions
+_"**1.** Which ingredients make a recipe be considered a nut allergen?"_  
+  
+* "noot"
+* "pinda"
+* "eikel"* "amandel"
+
 <details><summary> Model performances </summary>
 
 | Classifier Models   | Precision | Recall | Accuracy |
@@ -108,11 +114,9 @@ The methods and models we applied were all used on a yard that was always empty 
 
 During the project, our goal was to have the model fill the whole yard with containers until there is no space left. In reality, not all the space in a yard is used up when unloading just one ship. We could have used more yard space or smaller ships to unload to have the model try to find optimal stacks that do not use up all the avaible space on a yard.
 
-The orginized stacks that our models end up with are optimal as long as the ships the containers are loaded in all arrive on schedule.
+The orginized stacks that our models end up with are optimal as long as the ships the containers are loaded in all arrive on schedule. If the order of incoming ships changes or one ship decides to go to another terminal, the lay-out on the yard would probably be much less optimal. In the future we could have the model adapt to such unforeseen situations by training it to produce multiple optimal lay-outs, each for a different order of ships.
 
-reach stacker route limitations
-
-loading from yard to ship
+Having the least amount of boxed in containers in the yard lay-out is our top priority, but our model doesn't take into account the time it takes for the reach stacker to go from a container it just placed to the next. In the future we could try to focus more on these limitations to prevent eventual delay. This could be done by starting the lay-out of half of the containers at one side of the yard before placing the other half of the load on the other side.
 
 ### Conclusions
 
