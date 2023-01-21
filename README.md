@@ -228,11 +228,13 @@ After doing my assignments on DataCamp, there were, in my opinion, two courses t
 After the models were chosen and the data both prepared and splitted into train and test sets, I created and fitted my three own classifier models. The predictions of my models showed the following result.
 
 <details><summary> Model performances </summary>
+
 | Classifier Models   | Precision | Recall   | Accuracy |
 | ------------------- |:---------:|:--------:|:--------:|
 | K-Nearest Neighbors | 0.794872  | 0.738095 | 0.641509 |
 | Logistic Regression | 0.807692  | 1.000000 | 0.811321 |
 | Decision Tree       | 0.848485  | 0.666667 | 0.641509 |
+
 </details>
 
 
