@@ -218,6 +218,7 @@ We also created a new Trello Board for this project. The structure mostly stayed
 
 # Predictive Analytics
 ## FoodBoost
+### Models
 
 To predict a person's opinion on thousands of recipes we needed to use Machine Learning. There are too many recipes to do this manually after all. We decided that a person had only two options when rating a recipe. They either liked the recipe (represented by a '1') or did not like the recipe (represented by a '0'). This meant that we were dealing with classes and had to use a classification model.  
 
@@ -254,43 +255,37 @@ After the models were chosen and the data both prepared and splitted into train 
 
 To determine which classifier was best suited for our research, we would choose the one with the highest precision score. If our final model would predict incorrectly that a recipe is not liked, it has no major consequences for our recipe schedule. But if it predicts incorrectly that a recipe is liked, then the schedule might feature recipes the person doesn't like. This leads me to believe the main focus is on reducing the False Positives, which means a higher precision is more desired. In that case the Decision Tree seems to be the best choice.  
 
-___
+### Hyperparameter tuning
 
 In order to achieve the highest precision for every classifier, I used hyperparameter tuning on all three models.  
 
-___
+#### K-Nearest Neighbors
 
-For the K-Nearest Neighbors classifier I tuned the `n_neighbors` parameter to see what is the optimal amount of neighbors. The following graph shows the average precision score for 1 to 40 neighbors.  
+For the K-Nearest Neighbors classifier I tuned the `n_neighbors` parameter to see what is the optimal amount of neighbors. The following graph shows the average precision score for 1 to 40 neighbors. Based on the results I used `n_neighbors = 28` for the model  
 
 <details>
 <summary>Hyperparameter Tuning: n_neighbors</summary>
 <img src="Images/KNNtuning.png" width="500"/>
 </details>
 
-Based on the results I used `n_neighbors = 28` for the model  
+#### Logistic Regression
 
-___
-
-For the Logistic Regression classifier I tuned the `C` and `penalty` parameters using `GridSearchCV` which resulted in the following output.  
+For the Logistic Regression classifier I tuned the `C` and `penalty` parameters using `GridSearchCV` which resulted in the following output. Based on this outcome I went with `penalty = 'l2'` and `C = 0.1`  
 
 ```
 {'C': 1e-05, 'penalty': 'l2'}
 ```
 
-Based on this outcome I went with `penalty = 'l2'` and `C = 0.1`  
+#### Decision Tree
 
-___
-
-For the Decision Tree I decided to tune the `max_depth` parameter to see the best maximum depth of the tree. The following graph shows the average precision score for 1 to 50 tree depth.
+For the Decision Tree I decided to tune the `max_depth` parameter to see the best maximum depth of the tree. The following graph shows the average precision score for 1 to 50 tree depth. Based on the results I went with `max_depth = 33` for the final model.  
 
 <details>
 <summary>Hyperparameter Tuning: max_depth</summary>
 <img src="Images/DTFtuning.png" width="500"/>
 </details>
 
-Based on the results I went with `max_depth = 33` for the final model.
-
-___
+### Cross-Validation
 
 To check if the models do not under- or overfit I used cross-validation. Here I used stratified cross-validation, because the data was unbalanced and I needed to give the five folds the same proportion of 0 and 1 values.  
 
@@ -306,7 +301,11 @@ To check if the models do not under- or overfit I used cross-validation. Here I 
 
 ___
 
-The code for these operations are in [this python notebook](/Python%20Notebooks/Classification%20models%20Foodboost.ipynb).  
+The code for the operations of this chapter are in [this python notebook](/Python%20Notebooks/Classification%20models%20Foodboost.ipynb).  
+
+## Cofano Containers
+
+We focused on the unloading part of the Container Storage Problem. Because this problem does not have one clear solution and we didn't know how to implement the Cofano data given to us, we would use neither Supervised nor Unsupervised learning. After hearing one of our mentors talking about it, we decided to use Reinforcement Learning. A literature review about [applications of Machine Learning methods in port operations](https://doi.org/10.1016/j.tre.2022.102722) mentioned this method as well and how much potential it has for these kind of problems.
 
 # Domain Knowledge
 
