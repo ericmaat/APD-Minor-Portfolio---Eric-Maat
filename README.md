@@ -306,7 +306,7 @@ To check if the models do not under- or overfit I used cross-validation. Here I 
 
 ___
 
-The code for these operations are in this python notebook.  
+The code for these operations are in [this python notebook](/Python%20Notebooks/Classification%20models%20Foodboost.ipynb).  
 
 # Domain Knowledge
 
