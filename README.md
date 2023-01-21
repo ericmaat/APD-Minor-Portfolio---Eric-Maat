@@ -225,7 +225,7 @@ Because we try to predict what class a recipe belongs to, this class was made th
 
 After doing my assignments on DataCamp, there were, in my opinion, two courses that seemed useful for this case. The courses "Machine Learning with scikit-learn" and "Model Validation in Python" presented several examples of classification models and how to validate these. The three classifiers that stood out here were the **K-Nearest Neighbors**, **Logistic Regression** and **Decision Tree** classifiers.  
 
-After the models were chosen and the data both prepared and splitted into train and test sets, I created and fitted my three own classifier models. The predictions of my models showed the following results.
+After the models were chosen and the data both prepared and splitted into train and test sets, I created and fitted my three own classifier models. The predictions of my models showed the following results.  
 
 <details><summary> Model performances </summary>
 
@@ -251,6 +251,13 @@ After the models were chosen and the data both prepared and splitted into train 
 <summary>Confusion Matrix: Decision Tree</summary>
 <img src="Images/DTCmatrix.png" width="400"/>
 </details>
+
+To determine which classifier was best suited for our research, we would choose the one with the highest precision score. If our final model would predict incorrectly that a recipe is not liked, it has no major consequences for our recipe schedule. But if it predicts incorrectly that a recipe is liked, then the schedule might feature recipes the person doesn't like. This leads me to believe the main focus is on reducing the False Positives, which means a higher precision is more desired. In that case the Decision Tree seems to be the best choice.  
+
+In order to achieve the highest precision for every classifier, I used hyperparameter tuning on all three models.  
+
+For the K-Nearest Neighbors classifier I tuned the `n_neighbors` parameter to see what is the optimal amount of neighbors. The following graph shows the average precision score for 1 to 40 neighbors.
+
 
 # Domain Knowledge
 
