@@ -53,7 +53,7 @@ We chose a research goal with this many elements and restrictions, because there
 
 Even though the project would eventually last only six weeks, a lot of progress was made regarding the data preprocessing, predictive analysis and Operational Research. Naturally, there is still room for improvement.  
 
-The original data consisted of approximately 10.000 recipes. Around 4.500 of those were kept by only keeping the nut-free lunch and diner recipes. While these are still enough data elements to base a predictive model on, there might still have been too many features. Only the ingredients were kept that were used for at least one percent of the recipes. That ended up being more than 100 features, which might have led to eventual overfitting. Having more data and/or less features would have probably improved the model performances.  
+The original data consisted of approximately 10.000 recipes. Around 4.500 of those were kept by only keeping the nut-free lunch and diner recipes. While these are still enough data elements to base a predictive model on, there might still have been too many features. Only the ingredients were kept that were used for at least one percent of the recipes. That ended up being more than 100 features, which might have led to overfitting in the end. Having more data and/or less features would have probably improved the model performances.  
 
 We based our models on the food opinions of a group mate. He ended up liking 180 of the 265 recipes. This meant our created data had 180 ones and 85 zeros, thus making the dataset skewed. We could have balanced the dataset to give both classes equal proportions.  
 
@@ -305,7 +305,13 @@ The code for the operations of this chapter are in [this python notebook](/Pytho
 
 ## Cofano Containers
 
-We focused on the unloading part of the Container Storage Problem. Because this problem does not have one clear solution and we didn't know how to implement the Cofano data given to us, we would use neither Supervised nor Unsupervised learning. After hearing one of our mentors talking about it, we decided to use Reinforcement Learning. A literature review about [applications of Machine Learning methods in port operations](https://doi.org/10.1016/j.tre.2022.102722) mentioned this method as well and how much potential it has for these kind of problems.
+We focused on the unloading part of the Container Storage Problem. Because this problem does not have one clear solution and we didn't know how to implement the Cofano data given to us, we would use neither Supervised nor Unsupervised learning. After hearing one of our mentors talking about it, we decided to use Reinforcement Learning. A literature review about [applications of Machine Learning methods in port operations](https://doi.org/10.1016/j.tre.2022.102722) mentioned this method as well and how much potential it has for these kind of problems.  
+
+Reinforcement learning follows the cycle of trial and error. The agent performs an action on the environment and the environment returns what the consequences of those actions are (state) and the reward the agent gets for it. I tried to apply this to our research problem. 
+
+### The Environment
+
+I used the [Gym library](https://gymnasium.farama.org/api/env/) and their environments to help me understand how to make a suitable environment.
 
 # Domain Knowledge
 
