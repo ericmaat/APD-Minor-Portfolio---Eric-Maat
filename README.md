@@ -254,10 +254,33 @@ After the models were chosen and the data both prepared and splitted into train 
 
 To determine which classifier was best suited for our research, we would choose the one with the highest precision score. If our final model would predict incorrectly that a recipe is not liked, it has no major consequences for our recipe schedule. But if it predicts incorrectly that a recipe is liked, then the schedule might feature recipes the person doesn't like. This leads me to believe the main focus is on reducing the False Positives, which means a higher precision is more desired. In that case the Decision Tree seems to be the best choice.  
 
-In order to achieve the highest precision for every classifier, I used hyperparameter tuning on all three models.  
+In order to achieve the highest precision for every classifier, I used hyperparameter tuning on all three models. To prevent any overfitting I used cross validation and made it determine the best value for each parameter.
 
-For the K-Nearest Neighbors classifier I tuned the `n_neighbors` parameter to see what is the optimal amount of neighbors. The following graph shows the average precision score for 1 to 40 neighbors.
+For the K-Nearest Neighbors classifier I tuned the `n_neighbors` parameter to see what is the optimal amount of neighbors. The following graph shows the average precision score for 1 to 40 neighbors.  
 
+<details>
+<summary>Hyperparameter Tuning: n_neighbors</summary>
+<img src="Images/KNNtuning.png" width="500"/>
+</details>
+
+Based on the results I used `n_neighbors = 28` for the model  
+
+For the Logistic Regression classifier I tuned the `C` and `penalty` parameters using `GridSearchCV` which resulted in the following output.  
+
+```
+{'C': 1e-05, 'penalty': 'l2'}
+```
+
+Based on this outcome I went with `penalty = 'l2'` and `C = 0.1`  
+
+For the Decision Tree I decided to tune the `max_depth` parameter to see the best maximum depth of the tree. The following graph shows the average precision score for 1 to 50 tree depth.
+
+<details>
+<summary>Hyperparameter Tuning: max_depth</summary>
+<img src="Images/DTFtuning.png" width="500"/>
+</details>
+
+Based on the results I went with `max_depth = 33` for the final model.
 
 # Domain Knowledge
 
