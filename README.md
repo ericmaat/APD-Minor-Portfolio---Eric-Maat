@@ -225,7 +225,7 @@ Because we try to predict what class a recipe belongs to, this class was made th
 
 After doing my assignments on DataCamp, there were, in my opinion, two courses that seemed useful for this case. The courses "Machine Learning with scikit-learn" and "Model Validation in Python" presented several examples of classification models and how to validate these. The three classifiers that stood out here were the **K-Nearest Neighbors**, **Logistic Regression** and **Decision Tree** classifiers.  
 
-After the models were chosen and the data both prepared and splitted into train and test sets, I created and fitted my three own classifier models. The predictions of my models showed the following result.
+After the models were chosen and the data both prepared and splitted into train and test sets, I created and fitted my three own classifier models. The predictions of my models showed the following results.
 
 <details><summary> Model performances </summary>
 
@@ -237,7 +237,20 @@ After the models were chosen and the data both prepared and splitted into train 
 
 </details>
 
+<details>
+<summary>Confusion Matrix: K-Nearest Neighbors</summary>
+<img src="Images/KNNmatrix.png" width="400"/>
+</details>
 
+<details>
+<summary>Confusion Matrix: Logistic Regression</summary>
+<img src="Images/LRmatrix.png" width="400"/>
+</details>
+
+<details>
+<summary>Confusion Matrix: Decision Tree</summary>
+<img src="Images/DTCmatrix.png" width="400"/>
+</details>
 
 # Domain Knowledge
 
