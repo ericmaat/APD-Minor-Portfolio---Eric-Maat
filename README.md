@@ -219,9 +219,23 @@ We also created a new Trello Board for this project. The structure mostly stayed
 # Predictive Analytics
 ## FoodBoost
 
-To predict a person's opinion on thousands of recipes we needed to use Machine Learning. There are too many recipes to do this manually after all. We decided that a person had only two options when rating a recipe. They either liked the recipe (represented by a '1') or did not like the recipe (represented by a '0'). This meant that we were dealing with classes and had to use a classification model. After doing my assignments on DataCamp, there were, in my opinion, two courses that seemed useful for this case. The courses "Machine Learning with scikit-learn" and "Model Validation in Python" presented several examples of classification models and how to validate these. The three classifiers that stood out here were the **K-Nearest Neighbors**, **Logistic Regression** and **Decision Tree** classifiers.  
+To predict a person's opinion on thousands of recipes we needed to use Machine Learning. There are too many recipes to do this manually after all. We decided that a person had only two options when rating a recipe. They either liked the recipe (represented by a '1') or did not like the recipe (represented by a '0'). This meant that we were dealing with classes and had to use a classification model.  
 
-Because we try to predict what class a recipe belongs to, this class was made the target variable. 
+Because we try to predict what class a recipe belongs to, this class was made the target variable. The ingredients of a recipe almost always decide wether a person likes a recipe or not, so the ingredients were the the features in this case.  
+
+After doing my assignments on DataCamp, there were, in my opinion, two courses that seemed useful for this case. The courses "Machine Learning with scikit-learn" and "Model Validation in Python" presented several examples of classification models and how to validate these. The three classifiers that stood out here were the **K-Nearest Neighbors**, **Logistic Regression** and **Decision Tree** classifiers.  
+
+After the models were chosen and the data both prepared and splitted into train and test sets, I created and fitted my three own classifier models. The predictions of my models showed the following result.
+
+<details><summary> Model performances </summary>
+| Classifier Models   | Precision | Recall   | Accuracy |
+| ------------------- |:---------:|:--------:|:--------:|
+| K-Nearest Neighbors | 0.794872  | 0.738095 | 0.641509 |
+| Logistic Regression | 0.807692  | 1.000000 | 0.811321 |
+| Decision Tree       | 0.848485  | 0.666667 | 0.641509 |
+</details>
+
+
 
 # Domain Knowledge
 
