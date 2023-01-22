@@ -337,9 +337,9 @@ I included a step and reset method. The step method would use the given action t
 
 The agent would be able to use the whole yard as action space at all times. For a 3x3x2 sized yard, that would mean the agent would have an action size of 18 at any time in the game. A container placement had to follow the restrictions, so when an impossible action is chosen (like placing a container in the air) the container would not be placed and the agent would receive a negative reward. To train the agent I intended to use Deep Q-learning. I tried using a neural network with two hidden layers of size 64 in case one layer was not sufficient. I also used a replay buffer to save samples which the agent could use to train.  
 
-___
+The code for my Reinforcement Learning model is in [this python notebook](/Python%20Notebooks/Reinforcement%20Learning%20model%20Eric.ipynb).
 
-The code for my Reinforcement Learning model is in [this python notebook](/Python%20Notebooks/Classification%20models%20Foodboost.ipynb).
+___
 
 ### Evaluating an end lay-out
 
@@ -361,7 +361,7 @@ The barplot above shows the performance of the Reinforcement Learning model comp
 
 ___
 
-The code for my inbox/reward function is in [this python notebook](/Python%20Notebooks/Classification%20models%20Foodboost.ipynb).
+The code for my inbox/reward function is in [this python notebook](/Python%20Notebooks/Reward%20Inbox%20function.ipynb).
 
 # Domain Knowledge
 
