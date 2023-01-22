@@ -337,11 +337,31 @@ I included a step and reset method. The step method would use the given action t
 
 The agent would be able to use the whole yard as action space at all times. For a 3x3x2 sized yard, that would mean the agent would have an action size of 18 at any time in the game. A container placement had to follow the restrictions, so when an impossible action is chosen (like placing a container in the air) the container would not be placed and the agent would receive a negative reward. To train the agent I intended to use Deep Q-learning. I tried using a neural network with two hidden layers of size 64 in case one layer was not sufficient. I also used a replay buffer to save samples which the agent could use to train.  
 
+___
+
+The code for my Reinforcement Learning model is in [this python notebook](/Python%20Notebooks/Classification%20models%20Foodboost.ipynb).
+
 ### Evaluating an end lay-out
 
-My own Reinforcement Learning model ended up not working as intended, so I shared all the knowledge I gained to at least be of some use for the final product. We ended up using Martti's Reinforcement Learning model which had an action space based on the lay-out rows instead of all avaible spaces.  
+My own Reinforcement Learning model ended up not working as intended, so I shared all the knowledge I gained to at least be of some use for the final product. We ended up using Martti's Reinforcement Learning model which had an action space based on the lay-out rows instead of all avaible spaces. This model would use a yardsize of 4x4x5.
 
-To evaluate how optimal the produced end lay-outs of this model were, I build a reward function. Any container in a row can be reached from two sides. The function would choose the best side to approach each container and would rate the lay-out on how many containers required other containers to be relocated. The less containers that require relocation, the higher the score.
+To evaluate how optimal the produced end lay-outs of this model were, I build a reward function. Any container in a row can be reached from two sides. The function would choose the best side to approach each container and would rate the lay-out on how many containers required other containers to be relocated. The less containers that require relocation, the higher the score.  
+
+<details>
+<summary>Reach container from two sides</summary>
+<img src="Images/score-container.png" width="400"/>
+</details>
+
+<details>
+<summary>Reinforcement Learning model vs Random choice performance</summary>
+<img src="Images/DQNvsRandom.png" width="400"/>
+</details>
+
+The barplot above shows the performance of the Reinforcement Learning model compared to a randomly filled lay-out according to my reward function. Both methods generated 13 lay-outs each. The averages of the results are shown here. In this case we only look at the amount of containers that require relocations. The model outperforms the random choice with only having around 13 boxed in containers out of all 80 in the lay-out.
+
+___
+
+The code for my inbox/reward function is in [this python notebook](/Python%20Notebooks/Classification%20models%20Foodboost.ipynb).
 
 # Domain Knowledge
 
