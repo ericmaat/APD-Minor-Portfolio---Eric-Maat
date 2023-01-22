@@ -311,7 +311,37 @@ Reinforcement learning follows the cycle of trial and error. The agent performs 
 
 ### The Environment
 
-I used the [Gym library](https://gymnasium.farama.org/api/env/) and their environments to help me understand how to make a suitable environment.
+I used the [Gym library](https://gymnasium.farama.org/api/env/) and their environments to help me understand how to make a suitable environment class. The starting environment I used was a three-dimensional array filled with zeros to simulate an empty container yard.   
+
+<details><summary> An empty 3x3x2 container yard </summary>
+
+```
+(array([[['0', '0'],
+         ['0', '0'],
+         ['0', '0']],
+         
+        [['0', '0'],
+         ['0', '0'],
+         ['0', '0']],
+         
+        [['0', '0'],
+         ['0', '0'],
+         ['0', '0']]], dtype='<U1')
+```
+
+</details>
+
+I included a step and reset method. The step method would use the given action to put a container (1,2 or 3) in the environment and would return the observation, reward and wether the game is done or not. A game would end when either the yard is full, no container can be added to the current lay-out, or the ship has no containers left to unload. In one of these cases the environment would be reset for the next game.
+
+### The Agent
+
+The agent would be able to use the whole yard as action space at all times. For a 3x3x2 sized yard, that would mean the agent would have an action size of 18 at any time in the game. A container placement had to follow the restrictions, so when an impossible action is chosen (like placing a container in the air) the container would not be placed and the agent would receive a negative reward. To train the agent I intended to use Deep Q-learning. I tried using a neural network with two hidden layers of size 64 in case one layer was not sufficient. I also used a replay buffer to save samples which the agent could use to train.  
+
+### Evaluating an end lay-out
+
+My own Reinforcement Learning model ended up not working as intended, so I shared all the knowledge I gained to at least be of some use for the final product. We ended up using Martti's Reinforcement Learning model which had an action space based on the lay-out rows instead of all avaible spaces.  
+
+To evaluate how optimal the produced end lay-outs of this model were, I build a reward function. Any container in a row can be reached from two sides. The function would choose the best side to approach each container and would rate the lay-out on how many containers required other containers to be relocated. The less containers that require relocation, the higher the score.
 
 # Domain Knowledge
 
