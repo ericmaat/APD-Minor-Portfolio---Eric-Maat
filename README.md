@@ -372,15 +372,9 @@ Our research focused heavily on predicting wether a person likes a recipe or not
 
 # Data Preprocessing
 
-## Data Exploration
+For the FoodBoost case we received four datasets. For the final classifiers models I used the `recipes.csv` as a base DataFrame and to have the calorie amounts of each recipe (The nutrients dataset has the calories too, but having the unit 'kcal' at the end makes it a column of strings). I used the `ingredients.csv` to display the ingredients each recipe has and make these the features of the predictive model. These were also useful to determine wether a recipe is nut-free or not. I also used the `tags.csv` to determine if a recipe is lunch, diner or something else.  
 
-## Data Cleansing
-
-## Data Preparation
-
-## Data Explanation
-
-## Data Visualization
+The research of my teammates showed the desired amount of calories for one lunch + one diner is around 1040 kcal. To know how many of the lunch + diner combinations there were around
 
 # Communication
 
