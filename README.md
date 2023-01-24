@@ -299,6 +299,8 @@ To check if the models do not under- or overfit I used cross-validation. Here I 
 
 </details>
 
+___
+
 The code for the operations of this chapter are in [this python notebook](/Python%20Notebooks/Classification%20models%20Foodboost.ipynb).  
 
 ## Cofano Containers
@@ -335,6 +337,8 @@ I included a step and reset method. The step method would use the given action t
 
 The agent would be able to use the whole yard as action space at all times. For a 3x3x2 sized yard, that would mean the agent would have an action size of 18 at any time in the game. A container placement had to follow the restrictions, so when an impossible action is chosen (like placing a container in the air) the container would not be placed and the agent would receive a negative reward. To train the agent I intended to use Deep Q-learning. I tried using a neural network with two hidden layers of size 64 in case one layer was not sufficient. I also used a replay buffer to save samples which the agent could use to train.  
 
+___
+
 The code for my Reinforcement Learning model is in [this python notebook](/Python%20Notebooks/Reinforcement%20Learning%20model%20Eric.ipynb).
 
 ### Evaluating an end lay-out
@@ -361,6 +365,10 @@ The code for my inbox/reward function is in [this python notebook](/Python%20Not
 
 ## Subject Field Introduction
 Our research focused heavily on predicting wether a person likes a recipe or not. In this field, it is most important to reduce predictions which classify a recipe as 'liked', while in reality the person disliked the recipe (In our case, False Positives). Though it is also favorable to reduce prediction errors that fall into the False Negative category (especially if the person is a picky eater), such errors do not necessarily affect a good recipe schedule. It is worse to have disliked recipes show up on the schedule than missing out on some recipes that the person might have liked.  
+
+When making a week schedule of recommended recipes it is important to take into account what the nutrition intake should be for a person who follows this schedule. The amount of calories, protein, fat, etc. should all be balanced in order to have the person eat healthier instead of worse. Some people may not have too much intake of a certain nutrition, so it is also important for people to be able to set their personal preferences.  
+
+Allergies are very important to take into account when creating a recipe schedule. Our product contains data on lots of different recipes. Many of which can trigger one or more allergies. If the product does not know what allergies the user has, it may recommend recipes that could be fatal to the user. For this reason, the product should ask the user an unskippable question about any allergies the user has and should use the answer to keep certain recipes out of the recommendations.
 
 ## Literature Research
 
