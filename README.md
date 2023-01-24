@@ -299,8 +299,6 @@ To check if the models do not under- or overfit I used cross-validation. Here I 
 
 </details>
 
-___
-
 The code for the operations of this chapter are in [this python notebook](/Python%20Notebooks/Classification%20models%20Foodboost.ipynb).  
 
 ## Cofano Containers
@@ -339,8 +337,6 @@ The agent would be able to use the whole yard as action space at all times. For 
 
 The code for my Reinforcement Learning model is in [this python notebook](/Python%20Notebooks/Reinforcement%20Learning%20model%20Eric.ipynb).
 
-___
-
 ### Evaluating an end lay-out
 
 My own Reinforcement Learning model ended up not working as intended, so I shared all the knowledge I gained to at least be of some use for the final product. We ended up using Martti's Reinforcement Learning model which had an action space based on the lay-out rows instead of all avaible spaces. This model would use a yardsize of 4x4x5.
@@ -358,8 +354,6 @@ To evaluate how optimal the produced end lay-outs of this model were, I build a 
 </details>
 
 The barplot above shows the performance of the Reinforcement Learning model compared to a randomly filled lay-out according to my reward function. Both methods generated 13 lay-outs each. The averages of the results are shown here. In this case we only look at the amount of containers that require relocations. The model outperforms the random choice with only having around 13 boxed in containers out of all 80 in the lay-out.
-
-___
 
 The code for my inbox/reward function is in [this python notebook](/Python%20Notebooks/Reward%20Inbox%20function.ipynb).
 
@@ -444,6 +438,10 @@ I also wanted to visualize the container lay-out of the yard. There was not much
 <summary>Topdown view of Stacks</summary>
 <img src="Images/Stacksdata.png" width="500"/>
 </details>
+
+Every blue dot is the start of a container stack and the first lightblue cross on the right of it is the end of the same stack. The red dots represent the start of the stacks that are rotated 90 degrees compared to the blue ones and the first orange cross above it represents the end of those stacks. Though I am not sure I applied the data correctly, it did produce a lay-out where no stacks seem to overlap with other stacks. This means a lay-out like this is possible. While the visualization did not tell me much, It did make me realize how complex the lay-outs on the yard was.
+
+The code for this visualization can be found in [this python notebook](/Python%20Notebooks/Cofano%20Data%20Visualization.ipynb).
 
 # Communication
 
