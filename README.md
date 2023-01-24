@@ -362,13 +362,18 @@ The barplot above shows the performance of the Reinforcement Learning model comp
 The code for my inbox/reward function is in [this python notebook](/Python%20Notebooks/Reward%20Inbox%20function.ipynb).
 
 # Domain Knowledge
-
-## Subject Field Introduction
-Our research focused heavily on predicting wether a person likes a recipe or not. In this field, it is most important to reduce predictions which classify a recipe as 'liked', while in reality the person disliked the recipe (In our case, False Positives). Though it is also favorable to reduce prediction errors that fall into the False Negative category (especially if the person is a picky eater), such errors do not necessarily affect a good recipe schedule. It is worse to have disliked recipes show up on the schedule than missing out on some recipes that the person might have liked.  
+## Subject Field Introduction 
+### FoodBoost
 
 When making a week schedule of recommended recipes it is important to take into account what the nutrition intake should be for a person who follows this schedule. The amount of calories, protein, fat, etc. should all be balanced in order to have the person eat healthier instead of worse. Some people may not have too much intake of a certain nutrition, so it is also important for people to be able to set their personal preferences.  
 
-Allergies are very important to take into account when creating a recipe schedule. Our product contains data on lots of different recipes. Many of which can trigger one or more allergies. If the product does not know what allergies the user has, it may recommend recipes that could be fatal to the user. For this reason, the product should ask the user an unskippable question about any allergies the user has and should use the answer to keep certain recipes out of the recommendations.
+Allergies are very important to take into account when creating a recipe schedule. Our product contains data on lots of different recipes. Many of which can trigger one or more allergies. If the product does not know what allergies the user has, it may recommend recipes that could be fatal to the user. For this reason, the product should ask the user an unskippable question about any allergies the user has and should use the answer to keep certain recipes out of the recommendations.  
+
+Our research focused heavily on predicting wether a person likes a recipe or not. In this field, it is most important to reduce predictions which classify a recipe as 'liked', while in reality the person disliked the recipe (In our case, False Positives). Though it is also favorable to reduce prediction errors that fall into the False Negative category (especially if the person is a picky eater), such errors do not necessarily affect a good recipe schedule. It is worse to have disliked recipes show up on the schedule than missing out on some recipes that the person might have liked.  
+
+### Cofano Containers
+
+
 
 ## Literature Research
 
