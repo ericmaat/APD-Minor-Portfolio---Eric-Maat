@@ -375,6 +375,8 @@ Our research focused heavily on predicting wether a person likes a recipe or not
 
 For the FoodBoost case we received four datasets. For the final classifiers models I used the `recipes.csv` as a base DataFrame and to have the calorie amounts of each recipe (The nutrients dataset has the calories too, but having the unit 'kcal' at the end makes it a column of strings instead of integers). I used the `ingredients.csv` to display the ingredients each recipe has and make these the features of the predictive model. These were also useful to determine wether a recipe is nut-free or not. I also used the `tags.csv` to determine if a recipe is lunch, diner or something else.  
 
+### Calorie Data Research
+
 The research of my teammates showed the desired amount of calories for one lunch + one diner is around 1040 kcal. To know how many of the lunch + diner combinations there were around this calorie amount I decided to analyse the data. After I cleansed the data to only have lunch and diner recipes, I created two boxplots to show the distributions of calories for both dish types.  
 
 <details>
@@ -396,6 +398,8 @@ All the selected lunches were combined with all the selected diners to create to
 The plot shows that a lot of lunch+diner combinations add up to be between 900 and 1100 kcal. This would mean there are enough different day menus possible to create a recipe week schedule with some variation.  
 
 The code for this research can be found in [this python notebook](/Python%20Notebooks/Statistics%20Calorie%20Data.ipynb).
+
+### Other Data Operations
 
 Though I did not end up using it for my final classifier models, the `nutrients.csv` and other data was still used to examine if there was any data in it that I could use for these models.  
 
@@ -421,7 +425,11 @@ If a recipe contained one of these tags it would be used for the analysis. I cre
 
 The Italian cuisine seems to have the most recipes with the Dutch one not far behind. That means the model would probably have an easier time predicting wether a person likes one of these cuisines or not. I ended up not doing any follow-up research with this data because of time restraints.
 
-The code for these data operations can be found in [this python notebook](/Python%20Notebooks/Statistics%20Calorie%20Data.ipynb).
+The code for these data operations can be found in [this python notebook](/Python%20Notebooks/FoodBoost%20Data%20Operations.ipynb).
+
+## Cofano Containers
+
+
 
 # Communication
 
