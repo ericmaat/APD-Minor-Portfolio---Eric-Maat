@@ -371,10 +371,33 @@ Our research focused heavily on predicting wether a person likes a recipe or not
 ## Literature Research
 
 # Data Preprocessing
+## FoodBoost
 
-For the FoodBoost case we received four datasets. For the final classifiers models I used the `recipes.csv` as a base DataFrame and to have the calorie amounts of each recipe (The nutrients dataset has the calories too, but having the unit 'kcal' at the end makes it a column of strings). I used the `ingredients.csv` to display the ingredients each recipe has and make these the features of the predictive model. These were also useful to determine wether a recipe is nut-free or not. I also used the `tags.csv` to determine if a recipe is lunch, diner or something else.  
+For the FoodBoost case we received four datasets. For the final classifiers models I used the `recipes.csv` as a base DataFrame and to have the calorie amounts of each recipe (The nutrients dataset has the calories too, but having the unit 'kcal' at the end makes it a column of strings instead of integers). I used the `ingredients.csv` to display the ingredients each recipe has and make these the features of the predictive model. These were also useful to determine wether a recipe is nut-free or not. I also used the `tags.csv` to determine if a recipe is lunch, diner or something else.  
 
-The research of my teammates showed the desired amount of calories for one lunch + one diner is around 1040 kcal. To know how many of the lunch + diner combinations there were around
+The research of my teammates showed the desired amount of calories for one lunch + one diner is around 1040 kcal. To know how many of the lunch + diner combinations there were around this calorie amount I decided to analyse the data. After I cleansed the data to only have lunch and diner recipes, I created two boxplots to show the distributions of calories for both dish types.  
+
+<details>
+<summary>Calorie Distribution Boxplots for both lunch and diner</summary>
+<img src="Images/Boxplotkcal.png" width="400"/>
+</details>
+
+The lunch boxplot shows some outliers far above the upper fence of 845 kcal. Closer inspection of these datapoints show that these are recipes which are not meant to be eaten in one sitting by one person. These are recipes for food like whole loafs of bread, peanut butter and strawberry jam. These will be removed for further analysis. Logically, no lunch is below the lower fence of -75 kcal. From this analysis I decided to only use lunches between 0 and 845 kcal going forward.  
+
+The diner boxplot shows less extreme outliers than the lunch boxplot. Some outliers above the upper fence of 1005 kcal may include dishes meant for multiple people and below the lower fence of 165 kcal there may be some recipes that are not meant to only be a part of a whole diner. From this, I decided to only use diners between 165 and 1005 kcal for any follow-up research.  
+
+All the selected lunches were combined with all the selected diners to create total calorie amounts of all possible day menus. These ended up being around 3.25 million different combinations. This distribution is shown in the next histogram.  
+
+<details>
+<summary>Lunch+Diner calorie total Histogram</summary>
+<img src="Images/histogramkcal.png" width="400"/>
+</details>
+
+The plot shows that a lot of lunch+diner combinations add up to be between 900 and 1100 kcal. This would mean there are enough different day menus possible to create a recipe week schedule with some variation.  
+
+The code for this research can be found in [this python notebook](/Python%20Notebooks/Statistics%20Calorie%20Data.ipynb).
+
+Though I did not end up using it for my final classifier models, the `nutrients.csv` and other data was still used to examine if there was any data in it that I could use for these models.
 
 # Communication
 
