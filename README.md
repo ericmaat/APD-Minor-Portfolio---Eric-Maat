@@ -458,7 +458,7 @@ I also wanted to visualize the container lay-out of the yard. There was not much
 <img src="Images/Stacksdata.png" width="500"/>
 </details>
 
-Every blue dot is the start of a container stack and the first lightblue cross on the right of it is the end of the same stack. The red dots represent the start of the stacks that are rotated 90 degrees compared to the blue ones and the first orange cross above it represents the end of those stacks. Though I am not sure I applied the data correctly, it did produce a lay-out where no stacks seem to overlap with other stacks. This means a lay-out like this is possible. While the visualization did not tell me much, It did make me realize how complex the lay-outs on the yard was.
+Every blue dot is the start of a container stack and the first lightblue cross on the right of it is the end of the same stack. The red dots represent the start of the stacks that are rotated 90 degrees compared to the blue ones and the first orange cross above it represents the end of those stacks. Though I am not sure I applied the data correctly, it did produce a lay-out where no stacks seem to overlap with other stacks. This means a lay-out like this is possible. While the visualization did not tell me much, it did make me realize how complex the lay-outs on the yard could be.
 
 The code for this visualization can be found in [this python notebook](/Python%20Notebooks/Cofano%20Data%20Visualization.ipynb).
 
