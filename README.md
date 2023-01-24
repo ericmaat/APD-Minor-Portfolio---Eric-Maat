@@ -373,7 +373,13 @@ Our research focused heavily on predicting wether a person likes a recipe or not
 
 ### Cofano Containers
 
+While making a lay-out on the yard, it is important to know what kind of containers are transported. If containers have different sizes you have to be more aware of the limited space on the yard and a stack can only be dedicated to one type of container size. Some containers may also be heavier than others. This means heavy containers can not be stacked on top of lightweighted containers.  
 
+The placement of transported containers introduces some restrictions. If a stack has reached its maximum height, it would probably be unsafe to place another container on top of it. In the case that only reachstackers are avaible (which can only pick up containers from the long side) it is often not possible to place a container between two existing stacks.  
+
+The efficiency of the transport procedures is dependent on the machines that are avaible on the terminal. A container crane or two is capable of faster transport times than one reachstacker after all. Though, using multiple machines simultaneously requires a more complex model where the machines should avoid getting in each other's way.  
+
+Containers are often transported from or towards a ship. This means the inner lay-out of those ships keep changing during this process. It is important to keep the lay-out balanced at all times by not having too much container weight on only one side of the ship.  
 
 ## Literature Research
 
