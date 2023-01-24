@@ -331,7 +331,7 @@ I used the [Gym library](https://gymnasium.farama.org/api/env/) and their enviro
 
 </details>
 
-I included a step and reset method. The step method would use the given action to put a container (1,2 or 3) in the environment and would return the observation, reward and wether the game is done or not. A game would end when either the yard is full, no container can be added to the current lay-out, or the ship has no containers left to unload. In one of these cases the environment would be reset for the next game.
+I included a step and reset method. The step method would use the given action to put a container (1, 2 or 3) in the environment and would return the observation, reward and wether the game is done or not. A game would end when either the yard is full, no container can be added to the current lay-out, or the ship has no containers left to unload. In one of these cases the environment would be reset for the next game.
 
 ### The Agent
 
@@ -373,7 +373,7 @@ Our research focused heavily on predicting wether a person likes a recipe or not
 # Data Preprocessing
 ## FoodBoost
 
-For the FoodBoost case we received four datasets. For the final classifiers models I used the `recipes.csv` as a base DataFrame and to have the calorie amounts of each recipe (The nutrients dataset has the calories too, but having the unit 'kcal' at the end makes it a column of strings instead of integers). I used the `ingredients.csv` to display the ingredients each recipe has and make these the features of the predictive model. These were also useful to determine wether a recipe is nut-free or not. I also used the `tags.csv` to determine if a recipe is lunch, diner or something else.  
+For the FoodBoost case we received four datasets. These were from Allerhande and contained data on nearly 10.000 recipes. For the final classifiers models I used the `recipes.csv` as a base DataFrame and to have the calorie amounts of each recipe (The nutrients dataset has the calories too, but having the unit 'kcal' at the end makes it a column of strings instead of integers). I used the `ingredients.csv` to display the ingredients each recipe has and make these the features of the predictive model. These were also useful to determine wether a recipe is nut-free or not. I also used the `tags.csv` to determine if a recipe is lunch, diner or something else.  
 
 ### Calorie Data Research
 
@@ -408,7 +408,7 @@ At one moment in the project I thought about using the nutrients of each recipe 
 I also saw potential in using the different cuisines (like Dutch, Asian or Italian recipes) as features. The tags data showed for some recipes to which cuisine it belongs after all. The difference in cuisine could also prove to be a factor for someone's food opinions. French dishes differ alot from Asian dishes for example. After inspecting all different tags a recipe could have I created a list of cuisine tags.  
 
 <details>
-<summary> List of cuisinetags </summary>
+<summary> List of cuisine tags </summary>
 
 ```
 keukens = ['amerikaans','aziatisch','chinees','engels','frans','grieks','hollands','indiaas','indonesisch','italiaans', 'japans','marokkaans','mediterraan', 'mexicaans', 'midden-oosters','scandinavisch','spaans','thais','zuid-amerikaans']
@@ -429,7 +429,14 @@ The code for these data operations can be found in [this python notebook](/Pytho
 
 ## Cofano Containers
 
+For the Cofano case we received seven datasets. These were about the lay-out of the container yard, the avaible machines and the transport of containers of Cofano. This data was not as straightforward as the FoodBoost data and contained some confusing terms. To better understand theses datasets Joanne and I analyzed all seven of them. While Joanne examined what data could be useful to us, I examined how all the DataFrames could connect to one another. I ended up with the following information.
 
+<details>
+<summary>Connections between DataFrames</summary>
+<img src="Images/ConnectiontableCofano.png" width="600"/>
+</details>
+
+Every row in this table contains the attributes that connect with one another. At least, I think these are the correct connections. I wrote down all the different "id" attributes and connected them on which attribute names match and the range of their values. The `stackentry.csv` and `handling.csv` seem to make it possible to connect every attribute with each other. Though, the value ranges suggest that these attributes are more interconnected than what my table shows.
 
 # Communication
 
