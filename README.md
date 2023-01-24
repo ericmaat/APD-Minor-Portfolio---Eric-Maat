@@ -436,7 +436,14 @@ For the Cofano case we received seven datasets. These were about the lay-out of 
 <img src="Images/ConnectiontableCofano.png" width="600"/>
 </details>
 
-Every row in this table contains the attributes that connect with one another. At least, I think these are the correct connections. I wrote down all the different "id" attributes and connected them on which attribute names match and the range of their values. The `stackentry.csv` and `handling.csv` seem to make it possible to connect every attribute with each other. Though, the value ranges suggest that these attributes are more interconnected than what my table shows.
+Every row in this table contains the attributes that connect with one another. At least, I think these are the correct connections. I wrote down all the different "id" attributes and connected them on which attribute names match and the range of their values. The attributes of `stackentry.csv` and `handling.csv` seem to make it possible to connect every attribute with each other. Though, the value ranges suggest that these attributes are more interconnected than what my table shows.  
+
+I also wanted to visualize the container lay-out of the yard. There was not much data on the exact posion of the containers. The only DataFrame that seemed useful for this purpose was `stacks.csv`. Using the `positionx`, `positiony`, `maxlength` and `rotation` attributes I was able to create some sort of topdown view of the stacks on the yard. Though it may not be the correct way to display this data, I used a scatterplot to visualize these stacks.  
+
+<details>
+<summary>Topdown view of Stacks</summary>
+<img src="Images/Stacksdata.png" width="500"/>
+</details>
 
 # Communication
 
