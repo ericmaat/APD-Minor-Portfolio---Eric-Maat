@@ -397,7 +397,31 @@ The plot shows that a lot of lunch+diner combinations add up to be between 900 a
 
 The code for this research can be found in [this python notebook](/Python%20Notebooks/Statistics%20Calorie%20Data.ipynb).
 
-Though I did not end up using it for my final classifier models, the `nutrients.csv` and other data was still used to examine if there was any data in it that I could use for these models.
+Though I did not end up using it for my final classifier models, the `nutrients.csv` and other data was still used to examine if there was any data in it that I could use for these models.  
+
+At one moment in the project I thought about using the nutrients of each recipe as features to predict wether a person liked a recipe or not. Perhaps a high amount of protein or fat could be significant for someone's opinion on the dish. I converted the string values of the nutrients data to floats to create a usable DataFrame. In the end, I did not use the data for any promising models. Calories was the only data we would use for our final product.  
+
+I also saw potential in using the different cuisines (like Dutch, Asian or Italian recipes) as features. The tags data showed for some recipes to which cuisine it belongs after all. The difference in cuisine could also prove to be a factor for someone's food opinions. French dishes differ alot from Asian dishes for example. After inspecting all different tags a recipe could have I created a list of cuisine tags.  
+
+<details>
+<summary> List of cuisinetags </summary>
+
+```
+keukens = ['amerikaans','aziatisch','chinees','engels','frans','grieks','hollands','indiaas','indonesisch','italiaans', 'japans','marokkaans','mediterraan', 'mexicaans', 'midden-oosters','scandinavisch','spaans','thais','zuid-amerikaans']
+```
+
+</details>
+
+If a recipe contained one of these tags it would be used for the analysis. I created a horizontal barplot to show the amount of recipes each cuisine has in the (already cleansed) data.
+
+<details>
+<summary>Amount of recipes belonging to a cuisine</summary>
+<img src="Images/hbarplotcuisines.png" width="400"/>
+</details>
+
+The Italian cuisine seems to have the most recipes with the Dutch one not far behind. That means the model would probably have an easier time predicting wether a person likes one of these cuisines or not. I ended up not doing any follow-up research with this data because of time restraints.
+
+The code for these data operations can be found in [this python notebook](/Python%20Notebooks/Statistics%20Calorie%20Data.ipynb).
 
 # Communication
 
