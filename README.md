@@ -97,6 +97,8 @@ Ayrton ended up understanding his part and presented his part correctly. Even th
 **Reflection:**  
 This situation ended up being quite useful for both me and my group. Not only was I able to explain our work to both my teammate and the audience, but I was also able to practice my presenting skills. The effort I put into the visualizations also made me realize how useful they are when giving a presentation. Both for the audience and myself.  
 
+[Back to Table of Contents](#table-of-contents)
+
 # Research Projects
 ## Food Boost
 ### Task Definition
@@ -281,6 +283,8 @@ We also created a new Trello Board for this project. The structure mostly stayed
 <img src="Images/TrelloBoardCof.png" />
 </details>
 
+[Back to Table of Contents](#table-of-contents)
+
 # Predictive Analytics
 <a name="pa-FoodBoost"></a>
 ## FoodBoost  
@@ -428,6 +432,8 @@ The barplot above shows the performance of the Reinforcement Learning model comp
 
 The code for my inbox/reward function is in [this python notebook](/Python%20Notebooks/Reward%20Inbox%20function.ipynb).
 
+[Back to Table of Contents](#table-of-contents)
+
 # Domain Knowledge
 ## Subject Field Introduction 
 ### FoodBoost
@@ -467,7 +473,7 @@ Tags
 
 Linear Programming
 
-
+[Back to Table of Contents](#table-of-contents)
 
 # Data Preprocessing
 <a name="dp-FoodBoost"></a>
@@ -550,6 +556,8 @@ Every blue dot is the start of a container stack and the first lightblue cross o
 
 The code for this visualization can be found in [this python notebook](/Python%20Notebooks/Cofano%20Data%20Visualization.ipynb).
 
+[Back to Table of Contents](#table-of-contents)
+
 # Communication
 
 ## Presentations
@@ -580,6 +588,8 @@ For the paper I was responsible for writing the abstract and part of the results
 
 [The paper](/Other/Paper%20Group%205%20Cofano%20Containers.pdf)
 
+[Back to Table of Contents](#table-of-contents)
+
 # Python Notebooks
 ## FoodBoost
 
@@ -598,3 +608,5 @@ For the paper I was responsible for writing the abstract and part of the results
 - [Data Visualization Cofano](/Python%20Notebooks/Cofano%20Data%20Visualization.ipynb)
 
 # Other Achievements
+
+[Back to Table of Contents](#table-of-contents)
