@@ -3,15 +3,16 @@ Studentnumber: 20162928
 Education: Applied Mathematics  
 # <a id="table-of-contents"></a>Table of Contents <!-- omit in toc --> 
 - [DataCamp Courses](#DataCamp-Courses)
+- [Reflection and Evaluation](#Reflection-and-Evaluation)
+  - [Contribution to the Project](#Contribution-to-the-Project)
+  - [Learning Objectives](#Learning-Objectives)
+  - [Evaluation on Group Project](#Evaluation-on-Group-Project)
 - [Research Projects](#Research-Projects)
   - [Food Boost](#Food-Boost)
   - [Cofano Containers](#Cofano-Containers)
 - [Predictive Analytics](#Predictive-Analytics)
-  - [Model Selection](#Model-Selection)
-  - [Model Configuration](#Model-Configuration)
-  - [Model Training](#Model-Training)
-  - [Model Evaluation](#Model-Evaluation)
-  - [Model Visualization](#Model-Visualization)
+  - [Food Boost](#Food-Boost)
+  - [Cofano Containers](#Cofano-Containers)
 - [Domain Knowledge](#Domain-Knowledge)
   - [Subject Field Introduction](#Subject-Field-Introduction)
   - [Literature Research](#Literature-Research)
@@ -37,7 +38,7 @@ Education: Applied Mathematics
 
 In the end, I think I was able to contribute much to our two projects. Having multiple groups work on comparable projects always riles up my competitive spirit. This greatly improves my motivation and time I'm willing to invest in both my and my team's tasks. I feel like I also supported the others in their work by bringing up ideas or evaluating their most recent work. For the FoodBoost case I have done much in regard of data preprocessing and model evaluation. For the Cofano case I contributed to the final product by offering ideas on the actions the RL agent could choose and creating the final reward function.  
 
-###Building the reward function
+### Building the reward function
 
 **Situation:**  
 We combined our knowledge to create what would become our final Reinforcement Learning model. This model was already able to produce promising container lay-outs. The model gave an appropriate reward with every container it placed in the yard, but the environment did not include a method that could rate the produced lay-outs at the end. We needed a reward function that could appropriately evaluate the container lay-outs the model produced.  
@@ -58,7 +59,7 @@ By creating this function, I was able to contribute to the evaluation and valida
 
 This minor caught my eye, because I never had any experience with Data Science. I wanted to learn more about this field and see how useful it could prove to be. I ended up learning more than I initially thought. The first six weeks taught me the basics of Machine Learning. I gained a lot of knowledge about model selection, training, validation and evaluation and feel like I'm able to correctly apply it. In the following weeks I also learned a lot about Reinforcement Learning and Neural Networks. My own research made me understand the trial-and-error cycle and how RL agents could make use of a neural network to train.  
 
-*** My Reinforcement Learning research
+### My Reinforcement Learning research
 
 **Situation:**  
 The first six weeks of the minor had just ended, and we already decided to move on to the Cofano Container case instead of sticking to the FoodBoost case we focused on during that time. We were confident we would spend our remaining weeks on this case. After deciding on our research questions, we quickly realized we would need a model to tackle the problem presented to us. In the end, it was decided we would try to apply Reinforcement Learning to solve this. For the coming two weeks, every teammate was on their own to try to analyze, understand and apply this method.  
@@ -80,6 +81,8 @@ I am aware I have still much to learn when it comes to Reinforcement Learning, b
 All in all, I'm quite satisfied with our group project. For each project, we were able to create at least one model that produced a promising result. For FoodBoost, a recipe week schedule was made using both Machine Learning and Linear Programming. For Cofano, a model has been made that produces promising lay-outs. All the research questions we set up were also answered, so we've also reached our research goals. Not every result is equally solid and some conclusions might bring up even more questions. Though our lay-outs were correctly made, the situation might have been a bit unrealistic.  
 
 I am also satisfied with the team I ended up working with. Though Joanne, Jesse and me rigged the group distribution at the start to end up in the same group together, I'm still happy with the three other teammates I got to work with. Martti's coding skills, supportiveness and ability to quickly adapt to new Data Science methods made him the MVP of the group in my opinion. His models layed a perfect groundwork for the rest of the team. Joanne was disciplined, supportive and a bit stubborn the whole way through. Her useful code functions and leadership during every meeting made her a great asset. Jesse kept our spirits up and almost always knew a way forward when we were stuck. His great work on the linear programming and Baseline models should also not be denied. Sefa seemed to struggle a bit at the start, but showed motivation and willingness to improve. Though his skills at the moment are unknown to me, I like to believe he learned the most out of all of us. Ayrton often seemed overwhelmed, distraught and unmotivated when I worked with him. I feel like he has potential to do much better, but as it stands I can't help but feel a bit dissapointed in him.  
+
+### Presentation Visualizations
 
 **Situation:**  
 At the end of week 10 of the minor we needed to give our second end presentation on our Cofano Containers project. It was up to me and Ayrton to present this to the rest of the minor. The problem was that Ayrton did not know what he could present as he had insufficient amount of information and experience at that time.  
