@@ -257,7 +257,7 @@ To determine which classifier was best suited for our research, we would choose 
 
 ### Hyperparameter tuning
 
-In order to achieve the highest precision for every classifier, I used hyperparameter tuning on all three models.  
+In order to achieve the highest precision for every classifier, I used hyperparameter tuning on all three models. I used the [scikit-learn site](https://scikit-learn.org/stable/supervised_learning.html#supervised-learning) to see what parameters each classifier had and what values could be used for each.  
 
 #### K-Nearest Neighbors
 
@@ -311,7 +311,7 @@ Reinforcement learning follows the cycle of trial and error. The agent performs 
 
 ### The Environment
 
-I used the [Gym library](https://gymnasium.farama.org/api/env/) and their environments to help me understand how to make a suitable environment class. The starting environment I used was a three-dimensional array filled with zeros to simulate an empty container yard.   
+I used the [Gym library](https://gymnasium.farama.org/api/env/) and their environments to help me understand how to make a suitable environment class. I also used a [Reinforcement Learning model based on Tetris](https://github.com/nuno-faria/tetris-ai) to get inspiration for my environment. The starting environment I used was a three-dimensional array filled with zeros to simulate an empty container yard.   
 
 <details><summary> An empty 3x3x2 container yard </summary>
 
@@ -383,7 +383,14 @@ Containers are often transported from or towards a ship. This means the inner la
 
 ## Literature Research
 
-[An overview of recommender systems in the healthy food domain](https://doi.org/10.1007/s10844-017-0469-0)
+
+- [An overview of recommender systems in the healthy food domain](https://doi.org/10.1007/s10844-017-0469-0)
+
+- [Applications of machine learning methods in port operations – A systematic literature review](https://doi.org/10.1016/j.tre.2022.102722)
+
+- [A decision support system for managing combinatorial problems in container terminals](https://doi.org/10.1016/j.knosys.2011.06.021)
+
+- [Loading, unloading and premarshalling of stacks in storage areas: Surveyand classification](https://doi.org/10.1016/j.ejor.2014.03.011)
 
 # Data Preprocessing
 ## FoodBoost
