@@ -35,11 +35,43 @@ Education: Applied Mathematics
 # Reflection and Evaluation
 ## Contribution to the Project
 
-**Situation:** We combined our knowledge to create what would become our 
+**Situation:**  
+We combined our knowledge to create what would become our final Reinforcement Learning model. This model was already able to produce promising container lay-outs. The model gave an appropriate reward with every container it placed in the yard, but the environment did not include a method that could rate the produced lay-outs at the end. We needed a reward function that could appropriately evaluate the container lay-outs the model produced.
+**Task:**  
+My task was to create a reward function that could produce a scoring value to prove that the model’s lay-outs have indeed improved.
+**Action:**  
+At first, I analyzed our environments thoroughly and realized I could rate a lay-out row by row. A reachstacker can only pick up containers on the long sides after all. With this, I also realized that any container in any row could be reached by two different routes. From both the left and right. Using this knowledge, I created a sub method which would return two routes (as two dictionaries) of any container. My main reward function would determine which one of these two routes was the best by calculating how many containers of lower priority were on both routes. I decided to rate the chosen route on two cases. If the route had no lower priority containers on it, the total score would increase. This amount of increase depended on the size of the whole row. If there were lower priority containers on the route the total score would decrease. The amount of decrease depended on how many of those containers were on the route. Once the main function rated every container in the lay-out a total score is returned.
+**Result:**  
+The function ended up working on yards of any size. I tested it on smaller yards of 2x2x2 and 3x3x2 by manually creating good and bad lay-outs. It returned the desired scores as long as the entire yard space was used. Fortunately, our trained model always produced lay-outs without any space left. This function could finally be used to evaluate the lay-outs.
+**Reflection:**  
+By creating this function, I was able to contribute to the evaluation and validation of the final Reinforcement Learning model. It also made me able to understand the environment more and use the experience I gained for my own forsaken Reinforcement Learning model. I think my work has been very useful to my teammates and the project as a whole, especially when we needed to visualize the results for writing the paper.
 
 ## Learning Objectives
 
+**Situation:**  
+The first six weeks of the minor had just ended, and we already decided to move on to the Cofano Container case instead of sticking to the FoodBoost case we focused on during that time. We were confident we would spend our remaining weeks on this case. After deciding on our research questions, we quickly realized we would need a model to tackle the problem presented to us. In the end, it was decided we would try to apply Reinforcement Learning to solve this. For the coming two weeks, every teammate was on their own to try to analyze, understand and apply this method.
+**Task:**  
+My task was to learn the basics of Reinforcement Learning and try to apply it to our problem.
+**Action:**  
+The first thing I did was looking for tutorials on creating such a model from scratch. DataCamp was the first platform I searched on. Unfortunately, the courses about RL were limited and used a library which was not available in the Python Notebooks. The next thing I did was look for examples of RL models where the subject would be comparable to ours. This meant finding a model that had to organize objects based on their properties. Eventually, I found a RL model on GitHub that was trained to play Tetris. I wanted to try and replicate the model, so I studied the source code. It was here where I learned about all the necessary classes such a model needs and that the environment really identifies what each RL model is about. The code was still quite complex, so I continued my learning experience with the Gym library. The Gym site explained to me about what the trial-and-error cycle was all about and the basic code you need. By also using their Cartpole environment, I was able to practice too.
+**Result:**  
+As a result of my research, I was able to learn what Reinforcement Learning was about and in what situations it would come in handy. I also learned that to make this RL cycle work you need an interactable environment that identifies the situation and returns a state and reward, as well as an agent that uses a neural network to train itself to eventually choose actions that improve the performance.
+**Reflection:**  
+I am aware I have still much to learn when it comes to Reinforcement Learning, but I still was able to learn a lot from my experience. I feel like I’ve got the basics down already and have a better understanding on how and when it should be applied. I was also able to share my gained knowledge with my team and used it to come up with new ideas that could improve our final model.
+
 ## Evaluation on Group Project
+
+**Situation:**  
+At the end of week 10 of the minor we needed to give our second end presentation on our Cofano Containers project. It was up to me and Ayrton to present this to the rest of the minor. The problem was that Ayrton did not know what he could present as he had insufficient amount of information and experience at that time.
+**Task:**  
+The other teammates had to focus on their own work, so it was up to me to prepare all the contents of the presentation and tutor Ayrton about his part.
+**Action:**  
+We decided to work together to make and edit the PowerPoint. When making the slides, I would explain everything that was on it to have Ayrton keep up with what was happening. My own explanation ended up being too vague or not enough, so I eventually decided to put more focus and effort into images that could make things clearer. I would even draw some images myself using Photoshop. I presented the information to him again using the images instead.
+**Result:**  
+Ayrton ended up understanding his part and presented his part correctly. Even though I spent a bit too much time on my part, I still managed to present our work correctly and make things clearer to the audience by using the images.
+**Reflection:**  
+This situation ended up being quite useful for both me and my group. Not only was I able to explain our work to both my teammate and the audience, but I was also able to practice my presenting skills. The effort I put into the visualizations also made me realize how useful they are when giving a presentation. Both for the audience and myself.
+
 
 # Research Projects
 ## Food Boost
