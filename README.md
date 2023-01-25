@@ -224,7 +224,7 @@ To predict a person's opinion on thousands of recipes we needed to use Machine L
 
 Because we try to predict what class a recipe belongs to, this class was made the target variable. The ingredients of a recipe almost always decide wether a person likes a recipe or not, so the ingredients were the the features in this case.  
 
-After doing my assignments on DataCamp, there were, in my opinion, two courses that seemed useful for this case. The courses "Machine Learning with scikit-learn" and "Model Validation in Python" presented several examples of classification models and how to validate these. The three classifiers that stood out here were the **K-Nearest Neighbors**, **Logistic Regression** and **Decision Tree** classifiers.  
+After doing my assignments on DataCamp, there were, in my opinion, two courses that seemed useful for this case. The courses ["Machine Learning with scikit-learn"](https://app.datacamp.com/learn/courses/machine-learning-with-scikit-learn) and ["Model Validation in Python"](https://app.datacamp.com/learn/courses/model-validation-in-python) presented several examples of classification models and how to validate these. The three classifiers that stood out here were the **K-Nearest Neighbors**, **Logistic Regression** and **Decision Tree** classifiers.  
 
 After the models were chosen and the data both prepared and splitted into train and test sets, I created and fitted my three own classifier models. The predictions of my models showed the following results.  
 
@@ -382,6 +382,8 @@ The efficiency of the transport procedures is dependent on the machines that are
 Containers are often transported from or towards a ship. This means the inner lay-out of those ships keep changing during this process. It is important to keep the lay-out balanced at all times by not having too much container weight on only one side of the ship.  
 
 ## Literature Research
+
+[An overview of recommender systems in the healthy food domain](https://doi.org/10.1007/s10844-017-0469-0)
 
 # Data Preprocessing
 ## FoodBoost
