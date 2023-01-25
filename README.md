@@ -382,15 +382,19 @@ The efficiency of the transport procedures is dependent on the machines that are
 Containers are often transported from or towards a ship. This means the inner lay-out of those ships keep changing during this process. It is important to keep the lay-out balanced at all times by not having too much container weight on only one side of the ship.  
 
 ## Literature Research
-
+### FoodBoost
 
 - [An overview of recommender systems in the healthy food domain](https://doi.org/10.1007/s10844-017-0469-0)
+
+### Cofano Containers
 
 - [Applications of machine learning methods in port operations – A systematic literature review](https://doi.org/10.1016/j.tre.2022.102722)
 
 - [A decision support system for managing combinatorial problems in container terminals](https://doi.org/10.1016/j.knosys.2011.06.021)
 
 - [Loading, unloading and premarshalling of stacks in storage areas: Surveyand classification](https://doi.org/10.1016/j.ejor.2014.03.011)
+
+## Terminology
 
 # Data Preprocessing
 ## FoodBoost
