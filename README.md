@@ -30,6 +30,7 @@ Education: Applied Mathematics
 
 ![This is a alt text.](/Images/DatacampEric.png "DataCamp Courses")
 
+[Back to Table of Contents](#table-of-contents)
 # Reflection and Evaluation
 ## Contribution to the Project
 
