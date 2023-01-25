@@ -282,11 +282,8 @@ We also created a new Trello Board for this project. The structure mostly stayed
 
 # Predictive Analytics
 <a name="pa-FoodBoost"></a>
-  
-## FoodBoost 
-  
-
-### Models
+## FoodBoost  
+### Models  
 
 To predict a person's opinion on thousands of recipes we needed to use Machine Learning. There are too many recipes to do this manually after all. We decided that a person had only two options when rating a recipe. They either liked the recipe (represented by a '1') or did not like the recipe (represented by a '0'). This meant that we were dealing with classes and had to use a classification model.  
 
