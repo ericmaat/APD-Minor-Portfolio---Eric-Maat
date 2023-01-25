@@ -11,7 +11,7 @@ Education: Applied Mathematics
   - [Food Boost](#Food-Boost)
   - [Cofano Containers](#Cofano-Containers)
 - [Predictive Analytics](#Predictive-Analytics)
-  - [Food Boost](#Food-Boost-1)
+  - [Food Boost](#pa-FoodBoost)
   - [Cofano Containers](#pa-Cofano)
 - [Domain Knowledge](#Domain-Knowledge)
   - [Subject Field Introduction](#Subject-Field-Introduction)
@@ -281,7 +281,9 @@ We also created a new Trello Board for this project. The structure mostly stayed
 </details>
 
 # Predictive Analytics
-## FoodBoost <a name="pa-FoodBoost"></a>
+<a name="pa-FoodBoost">
+## FoodBoost 
+</a>
 ### Models
 
 To predict a person's opinion on thousands of recipes we needed to use Machine Learning. There are too many recipes to do this manually after all. We decided that a person had only two options when rating a recipe. They either liked the recipe (represented by a '1') or did not like the recipe (represented by a '0'). This meant that we were dealing with classes and had to use a classification model.  
