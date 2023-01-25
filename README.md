@@ -368,7 +368,8 @@ ___
 
 The code for the operations of this chapter are in [this python notebook](/Python%20Notebooks/Classification%20models%20Foodboost.ipynb).  
 
-## Cofano Containers <a name="pa-Cofano"></a>
+<a name="pa-Cofano"></a>
+## Cofano Containers 
 
 We focused on the unloading part of the Container Storage Problem. Because this problem does not have one clear solution and we didn't know how to implement the Cofano data given to us, we would use neither Supervised nor Unsupervised learning. After hearing one of our mentors talking about it, we decided to use Reinforcement Learning. A literature review about [applications of Machine Learning methods in port operations](https://doi.org/10.1016/j.tre.2022.102722) mentioned this method as well and how much potential it has for these kind of problems.  
 
@@ -468,7 +469,8 @@ Linear Programming
 
 
 # Data Preprocessing
-## FoodBoost <a name="dp-FoodBoost"></a>
+<a name="dp-FoodBoost"></a>
+## FoodBoost 
 
 For the FoodBoost case we received four datasets. These were from Allerhande and contained data on nearly 10.000 recipes. For the final classifiers models I used the `recipes.csv` as a base DataFrame and to have the calorie amounts of each recipe (The nutrients dataset has the calories too, but having the unit 'kcal' at the end makes it a column of strings instead of integers). I used the `ingredients.csv` to display the ingredients each recipe has and make these the features of the predictive model. These were also useful to determine wether a recipe is nut-free or not. I also used the `tags.csv` to determine if a recipe is lunch, diner or something else.  
 
@@ -524,7 +526,8 @@ The Italian cuisine seems to have the most recipes with the Dutch one not far be
 
 The code for these data operations can be found in [this python notebook](/Python%20Notebooks/FoodBoost%20Data%20Operations.ipynb).
 
-## Cofano Containers <a name="dp-Cofano"></a>
+<a name="dp-Cofano"></a>
+## Cofano Containers 
 
 For the Cofano case we received seven datasets. These were about the lay-out of the container yard, the available machines and the transport of containers of Cofano. This data was not as straightforward as the FoodBoost data and contained some confusing terms. To better understand theses datasets Joanne and I analyzed all seven of them. While Joanne examined what data could be useful to us, I examined how all the DataFrames could connect to one another. I ended up with the following information.
 
