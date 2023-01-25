@@ -11,7 +11,7 @@ Education: Applied Mathematics
   - [Food Boost](#Food-Boost)
   - [Cofano Containers](#Cofano-Containers)
 - [Predictive Analytics](#Predictive-Analytics)
-  - [Food Boost](#pa-FoodBoost)
+  - [Food Boost](#Food-Boost-1)
   - [Cofano Containers](#pa-Cofano)
 - [Domain Knowledge](#Domain-Knowledge)
   - [Subject Field Introduction](#Subject-Field-Introduction)
