@@ -512,7 +512,20 @@ For the paper I was responsible for writing the abstract and part of the results
 [The paper](/Other/Paper%20Group%205%20Cofano%20Containers.pdf)
 
 # Python Notebooks
+## FoodBoost
 
-[Dit is een notebook](/Python%20Notebooks/Score%20Functie%20Ding.ipynb)
+- [Classification models FoodBoost](/Python%20Notebooks/Classification%20models%20Foodboost.ipynb)
+
+- [Statistics Calorie data](/Python%20Notebooks/Statistics%20Calorie%20Data.ipynb)
+
+- [Data Operations FoodBoost](/Python%20Notebooks/FoodBoost%20Data%20Operations.ipynb)
+
+## Cofano Containers
+
+- [Reinforcement Learning model Cofano](/Python%20Notebooks/Reinforcement%20Learning%20model%20Eric.ipynb)
+
+- [Reward Inbox function](/Python%20Notebooks/Reward%20Inbox%20function.ipynb)
+
+- [Data Visualization Cofano](/Python%20Notebooks/Cofano%20Data%20Visualization.ipynb)
 
 # Other Achievements
