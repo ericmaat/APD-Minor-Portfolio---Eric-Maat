@@ -11,22 +11,19 @@ Education: Applied Mathematics
   - [Food Boost](#Food-Boost)
   - [Cofano Containers](#Cofano-Containers)
 - [Predictive Analytics](#Predictive-Analytics)
-  - [Food Boost](#Food-Boost)
-  - [Cofano Containers](#Cofano-Containers)
+  - [Food Boost](#pa-FoodBoost)
+  - [Cofano Containers](#pa-Cofano)
 - [Domain Knowledge](#Domain-Knowledge)
   - [Subject Field Introduction](#Subject-Field-Introduction)
   - [Literature Research](#Literature-Research)
+  - [Terminology](#Terminology)
 - [Data Preprocessing](#Data-Preprocessing)
-  - [Data Exploration](#Data-Exploration)
-  - [Data Cleansing](#Data-Cleansing)
-  - [Data Preparation](#Data-Preparation)
-  - [Data Explanation](#Data-Explanation)
-  - [Data Visualization](#Data-Visualization)
+  - [Food Boost](#dp-FoodBoost)
+  - [Cofano Containers](#dp-Cofano)
 - [Communication](#Communication)
   - [Presentations](#Presentations)
   - [Writing Paper](#Writing-Paper)
 - [Python Notebooks](#Python-Notebooks)
-- [Experiments](#Experiments)
 - [Other Achievements](#Other-Achievements)
 
 # DataCamp Courses
@@ -284,7 +281,7 @@ We also created a new Trello Board for this project. The structure mostly stayed
 </details>
 
 # Predictive Analytics
-## FoodBoost
+## FoodBoost <a name="pa-FoodBoost"></a>
 ### Models
 
 To predict a person's opinion on thousands of recipes we needed to use Machine Learning. There are too many recipes to do this manually after all. We decided that a person had only two options when rating a recipe. They either liked the recipe (represented by a '1') or did not like the recipe (represented by a '0'). This meant that we were dealing with classes and had to use a classification model.  
@@ -370,7 +367,7 @@ ___
 
 The code for the operations of this chapter are in [this python notebook](/Python%20Notebooks/Classification%20models%20Foodboost.ipynb).  
 
-## Cofano Containers
+## Cofano Containers <a name="pa-Cofano"></a>
 
 We focused on the unloading part of the Container Storage Problem. Because this problem does not have one clear solution and we didn't know how to implement the Cofano data given to us, we would use neither Supervised nor Unsupervised learning. After hearing one of our mentors talking about it, we decided to use Reinforcement Learning. A literature review about [applications of Machine Learning methods in port operations](https://doi.org/10.1016/j.tre.2022.102722) mentioned this method as well and how much potential it has for these kind of problems.  
 
@@ -470,7 +467,7 @@ Linear Programming
 
 
 # Data Preprocessing
-## FoodBoost
+## FoodBoost <a name="dp-FoodBoost"></a>
 
 For the FoodBoost case we received four datasets. These were from Allerhande and contained data on nearly 10.000 recipes. For the final classifiers models I used the `recipes.csv` as a base DataFrame and to have the calorie amounts of each recipe (The nutrients dataset has the calories too, but having the unit 'kcal' at the end makes it a column of strings instead of integers). I used the `ingredients.csv` to display the ingredients each recipe has and make these the features of the predictive model. These were also useful to determine wether a recipe is nut-free or not. I also used the `tags.csv` to determine if a recipe is lunch, diner or something else.  
 
@@ -526,7 +523,7 @@ The Italian cuisine seems to have the most recipes with the Dutch one not far be
 
 The code for these data operations can be found in [this python notebook](/Python%20Notebooks/FoodBoost%20Data%20Operations.ipynb).
 
-## Cofano Containers
+## Cofano Containers <a name="dp-Cofano"></a>
 
 For the Cofano case we received seven datasets. These were about the lay-out of the container yard, the available machines and the transport of containers of Cofano. This data was not as straightforward as the FoodBoost data and contained some confusing terms. To better understand theses datasets Joanne and I analyzed all seven of them. While Joanne examined what data could be useful to us, I examined how all the DataFrames could connect to one another. I ended up with the following information.
 
