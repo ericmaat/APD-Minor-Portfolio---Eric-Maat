@@ -352,7 +352,7 @@ The code for my Reinforcement Learning model is in [this python notebook](/Pytho
 
 ### Evaluating an end lay-out
 
-My own Reinforcement Learning model ended up not working as intended, so I shared all the knowledge I gained to at least be of some use for the final product. We ended up using Martti's Reinforcement Learning model which had an action space based on the lay-out rows instead of all avaible spaces. This model would use a yardsize of 4x4x5.
+My own Reinforcement Learning model ended up not working as intended, so I shared all the knowledge I gained to at least be of some use for the final product. We ended up using Martti's Reinforcement Learning model which had an action space based on the lay-out rows instead of all available spaces. This model would use a yardsize of 4x4x5.
 
 To evaluate how optimal the produced end lay-outs of this model were, I build a reward function. Any container in a row can be reached from two sides. The function would choose the best side to approach each container and would rate the lay-out on how many containers required other containers to be relocated. The less containers that require relocation, the higher the score.  
 
@@ -384,9 +384,9 @@ Our research focused heavily on predicting wether a person likes a recipe or not
 
 While making a lay-out on the yard, it is important to know what kind of containers are transported. If containers have different sizes you have to be more aware of the limited space on the yard and a stack can only be dedicated to one type of container size. Some containers may also be heavier than others. This means heavy containers can not be stacked on top of lightweighted containers.  
 
-The placement of transported containers introduces some restrictions. If a stack has reached its maximum height, it would probably be unsafe to place another container on top of it. In the case that only reachstackers are avaible (which can only pick up containers from the long side) it is often not possible to place a container between two existing stacks.  
+The placement of transported containers introduces some restrictions. If a stack has reached its maximum height, it would probably be unsafe to place another container on top of it. In the case that only reachstackers are available (which can only pick up containers from the long side) it is often not possible to place a container between two existing stacks.  
 
-The efficiency of the transport procedures is dependent on the machines that are avaible on the terminal. A container crane or two is capable of faster transport times than one reachstacker after all. Though, using multiple machines simultaneously requires a more complex model where the machines should avoid getting in each other's way.  
+The efficiency of the transport procedures is dependent on the machines that are available on the terminal. A container crane or two is capable of faster transport times than one reachstacker after all. Though, using multiple machines simultaneously requires a more complex model where the machines should avoid getting in each other's way.  
 
 Containers are often transported from or towards a ship. This means the inner lay-out of those ships keep changing during this process. It is important to keep the lay-out balanced at all times by not having too much container weight on only one side of the ship.  
 
@@ -470,7 +470,7 @@ The code for these data operations can be found in [this python notebook](/Pytho
 
 ## Cofano Containers
 
-For the Cofano case we received seven datasets. These were about the lay-out of the container yard, the avaible machines and the transport of containers of Cofano. This data was not as straightforward as the FoodBoost data and contained some confusing terms. To better understand theses datasets Joanne and I analyzed all seven of them. While Joanne examined what data could be useful to us, I examined how all the DataFrames could connect to one another. I ended up with the following information.
+For the Cofano case we received seven datasets. These were about the lay-out of the container yard, the available machines and the transport of containers of Cofano. This data was not as straightforward as the FoodBoost data and contained some confusing terms. To better understand theses datasets Joanne and I analyzed all seven of them. While Joanne examined what data could be useful to us, I examined how all the DataFrames could connect to one another. I ended up with the following information.
 
 <details>
 <summary>Connections between DataFrames</summary>
