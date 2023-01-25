@@ -487,7 +487,7 @@ The code for this visualization can be found in [this python notebook](/Python%2
 
 These are the presentations I gave, but contributed lightly:  
 
-- [FoodBoost Presentation Week 2](/Python%20Notebooks/FoodBoost%20Presentation%20Week%202.ipynb)
+- [FoodBoost Presentation Week 2](/Python%20Notebooks/FoodBoost%20Presentation%20Week2.ipynb)
 
 ## Writing Paper
 
