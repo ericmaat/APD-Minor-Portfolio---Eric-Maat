@@ -487,23 +487,23 @@ The code for this visualization can be found in [this python notebook](/Python%2
 
 These are the presentations I gave, but contributed lightly to:  
 
-- [FoodBoost Presentation Week 2](/Presentations/FoodBoost%20Presentation%20Week2.ipynb)
+- [FoodBoost Presentation Week 2](/Presentations/FoodBoost%20Presentation%20Week2.pdf)
 
-- [FoodBoost Presentation Week 6](/Presentations/FoodBoost%20Presentation%20Week6.ipynb)
+- [FoodBoost Presentation Week 6](/Presentations/FoodBoost%20Presentation%20Week6.pdf)
 
-- [Cofano Presentation Week 10](/Presentations/Cofano%20Presentation%20Week10.ipynb)
+- [Cofano Presentation Week 10](/Presentations/Cofano%20Presentation%20Week10.pdf)
 
 These are the presentations I gave and contributed heavily to:
 
-- [FoodBoost End Presentation Week 6](/Presentations/FoodBoost%20End%20Presentation%20Week6.ipynb)
+- [FoodBoost End Presentation Week 6](/Presentations/FoodBoost%20End%20Presentation%20Week6.pdf)
 
-- [Cofano End Presentation Week 10](/Presentations/Cofano%20End%20Presentation%20Week10.ipynb)
+- [Cofano End Presentation Week 10](/Presentations/Cofano%20End%20Presentation%20Week10.pdf)
 
-- [Cofano Presentation Week 14](/Presentations/Cofano%20Presentation%20Week14.ipynb)
+- [Cofano Presentation Week 14](/Presentations/Cofano%20Presentation%20Week14.pdf)
 
-- [Cofano Presentation Week 16](/Presentations/Cofano%20Presentation%20Week16.ipynb)
+- [Cofano Presentation Week 16](/Presentations/Cofano%20Presentation%20Week16.pdf)
 
-- [Cofano Presentation Week 18](/Presentations/Cofano%20Presentation%20Week18.ipynb)
+- [Cofano Presentation Week 18](/Presentations/Cofano%20Presentation%20Week18.pdf)
 
 ## Writing Paper
 
