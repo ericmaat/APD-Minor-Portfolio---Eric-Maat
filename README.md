@@ -509,7 +509,7 @@ These are the presentations I gave and contributed heavily to:
 
 For the paper I was responsible for writing the abstract and part of the results. In the results chapter I wrote about the first evaluation metric used for the model. Besides that, I contributed heavily to the contents of the introduction and the future works by thinking along with Joanne while she wrote these chapters. I also used the received feedback from Edwin and Tony to improve the paper as a whole together with part of the team. Lastly, I did a spell and grammar check by reading the whole paper again.
 
-
+[The paper](/Other/Paper%20Group%205%20Cofano%20Containers.pdf)
 
 # Python Notebooks
 
