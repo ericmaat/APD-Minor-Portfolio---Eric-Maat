@@ -32,6 +32,15 @@ Education: Applied Mathematics
 
 ![This is a alt text.](/Images/DatacampEric.png "DataCamp Courses")
 
+# Reflection and Evaluation
+## Contribution to the Project
+
+**Situation:** We combined our knowledge to create what would become our 
+
+## Learning Objectives
+
+## Evaluation on Group Project
+
 # Research Projects
 ## Food Boost
 ### Task Definition
