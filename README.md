@@ -3,28 +3,28 @@ Studentnumber: 20162928
 Education: Applied Mathematics  
 # <a id="table-of-contents"></a>Table of Contents <!-- omit in toc --> 
 - [1. DataCamp Courses](#DataCamp-Courses)
-- [2. Reflection and Evaluation](#Reflection-and-Evaluation)
-  - [2.1. Contribution to the Project](#Contribution-to-the-Project)
-  - [2.2. Learning Objectives](#Learning-Objectives)
-  - [2.3. Evaluation on Group Project](#Evaluation-on-Group-Project)
-- [3. Research Projects](#Research-Projects)
-  - [3.1. Food Boost](#Food-Boost)
-  - [3.2. Cofano Containers](#Cofano-Containers)
-- [4. Predictive Analytics](#Predictive-Analytics)
-  - [4.1. Food Boost](#pa-FoodBoost)
-  - [4.2. Cofano Containers](#pa-Cofano)
-- [5. Domain Knowledge](#Domain-Knowledge)
-  - [5.1. Subject Field Introduction](#Subject-Field-Introduction)
-  - [5.2. Literature Research](#Literature-Research)
-  - [5.3. Terminology](#Terminology)
-- [6. Data Preprocessing](#Data-Preprocessing)
-  - [6.1. Food Boost](#dp-FoodBoost)
-  - [6.2. Cofano Containers](#dp-Cofano)
-- [7. Communication](#Communication)
-  - [7.1. Presentations](#Presentations)
-  - [7.2. Writing Paper](#Writing-Paper)
-- [8. Python Notebooks](#Python-Notebooks)
-- [9. Other Achievements](#Other-Achievements)
+- [2. Research Projects](#Research-Projects)
+  - [2.1. Food Boost](#Food-Boost)
+  - [2.2. Cofano Containers](#Cofano-Containers)
+- [3. Predictive Analytics](#Predictive-Analytics)
+  - [3.1. Food Boost](#pa-FoodBoost)
+  - [3.2. Cofano Containers](#pa-Cofano)
+- [4. Domain Knowledge](#Domain-Knowledge)
+  - [4.1. Subject Field Introduction](#Subject-Field-Introduction)
+  - [4.2. Literature Research](#Literature-Research)
+  - [4.3. Terminology](#Terminology)
+- [5. Data Preprocessing](#Data-Preprocessing)
+  - [5.1. Food Boost](#dp-FoodBoost)
+  - [5.2. Cofano Containers](#dp-Cofano)
+- [6. Communication](#Communication)
+  - [6.1. Presentations](#Presentations)
+  - [6.2. Writing Paper](#Writing-Paper)
+- [7. Python Notebooks](#Python-Notebooks)
+- [8. Other Achievements](#Other-Achievements)
+- [9. Reflection and Evaluation](#Reflection-and-Evaluation)
+  - [9.1. Contribution to the Project](#Contribution-to-the-Project)
+  - [9.2. Learning Objectives](#Learning-Objectives)
+  - [9.3. Evaluation on Group Project](#Evaluation-on-Group-Project)
 
 <a name="DataCamp-Courses"></a>
 # 1. DataCamp Courses
@@ -34,83 +34,10 @@ Education: Applied Mathematics
 [Back to Table of Contents](#table-of-contents)
 ___
 
-<a name="Reflection-and-Evaluation"></a>
-# 2. Reflection and Evaluation
-<a name="Contribution-to-the-Project"></a>
-## 2.1. Contribution to the Project
-
-In the end, I think I was able to contribute much to our two projects. Having multiple groups work on comparable projects always riles up my competitive spirit. This greatly improves my motivation and time I'm willing to invest in both my and my team's tasks. I feel like I also supported the others in their work by bringing up ideas or evaluating their most recent work. For the FoodBoost case I have done much in regard of data preprocessing and model evaluation. For the Cofano case I contributed to the final product by offering ideas on the actions the RL agent could choose and creating the final reward function.  
-
-### Building the reward function
-
-**Situation:**  
-We combined our knowledge to create what would become our final Reinforcement Learning model. This model was already able to produce promising container lay-outs. The model gave an appropriate reward with every container it placed in the yard, but the environment did not include a method that could rate the produced lay-outs at the end. We needed a reward function that could appropriately evaluate the container lay-outs the model produced.  
-
-**Task:**  
-My task was to create a reward function that could produce a scoring value to prove that the model’s lay-outs have indeed improved.  
-
-**Action:**  
-At first, I analyzed our environments thoroughly and realized I could rate a lay-out row by row. A reachstacker can only pick up containers on the long sides after all. With this, I also realized that any container in any row could be reached by two different routes. From both the left and right. Using this knowledge, I created a sub method which would return two routes (as two dictionaries) of any container. My main reward function would determine which one of these two routes was the best by calculating how many containers of lower priority were on both routes. I decided to rate the chosen route on two cases. If the route had no lower priority containers on it, the total score would increase. This amount of increase depended on the size of the whole row. If there were lower priority containers on the route the total score would decrease. The amount of decrease depended on how many of those containers were on the route. Once the main function rated every container in the lay-out a total score is returned.  
-
-**Result:**  
-The function ended up working on yards of any size. I tested it on smaller yards of 2x2x2 and 3x3x2 by manually creating good and bad lay-outs. It returned the desired scores as long as the entire yard space was used. Fortunately, our trained model always produced lay-outs without any space left. This function could finally be used to evaluate the lay-outs.  
-
-**Reflection:**  
-By creating this function, I was able to contribute to the evaluation and validation of the final Reinforcement Learning model. It also made me able to understand the environment more and use the experience I gained for my own forsaken Reinforcement Learning model. I think my work has been very useful to my teammates and the project as a whole, especially when we needed to visualize the results for writing the paper.  
-
-<a name="Learning-Objectives"></a>
-## 2.2. Learning Objectives
-
-This minor caught my eye, because I never had any experience with Data Science. I wanted to learn more about this field and see how useful it could prove to be. I ended up learning more than I initially thought. The first six weeks taught me the basics of Machine Learning. I gained a lot of knowledge about model selection, training, validation and evaluation and feel like I'm able to correctly apply it. In the following weeks I also learned a lot about Reinforcement Learning and Neural Networks. My own research made me understand the trial-and-error cycle and how RL agents could make use of a neural network to train.  
-
-### My Reinforcement Learning research
-
-**Situation:**  
-The first six weeks of the minor had just ended, and we already decided to move on to the Cofano Container case instead of sticking to the FoodBoost case we focused on during that time. We were confident we would spend our remaining weeks on this case. After deciding on our research questions, we quickly realized we would need a model to tackle the problem presented to us. In the end, it was decided we would try to apply Reinforcement Learning to solve this. For the coming two weeks, every teammate was on their own to try to analyze, understand and apply this method.  
-
-**Task:**  
-My task was to learn the basics of Reinforcement Learning and try to apply it to our problem.  
-
-**Action:**  
-The first thing I did was looking for tutorials on creating such a model from scratch. DataCamp was the first platform I searched on. Unfortunately, the courses about RL were limited and used a library which was not available in the Python Notebooks. The next thing I did was look for examples of RL models where the subject would be comparable to ours. This meant finding a model that had to organize objects based on their properties. Eventually, I found a RL model on GitHub that was trained to play Tetris. I wanted to try and replicate the model, so I studied the source code. It was here where I learned about all the necessary classes such a model needs and that the environment really identifies what each RL model is about. The code was still quite complex, so I continued my learning experience with the Gym library. The Gym site explained to me about what the trial-and-error cycle was all about and the basic code you need. By also using their Cartpole environment, I was able to practice too.  
-
-**Result:**  
-As a result of my research, I was able to learn what Reinforcement Learning was about and in what situations it would come in handy. I also learned that to make this RL cycle work you need an interactable environment that identifies the situation and returns a state and reward, as well as an agent that uses a neural network to train itself to eventually choose actions that improve the performance.  
-
-**Reflection:**  
-I am aware I have still much to learn when it comes to Reinforcement Learning, but I still was able to learn a lot from my experience. I feel like I’ve got the basics down already and have a better understanding on how and when it should be applied. I was also able to share my gained knowledge with my team and used it to come up with new ideas that could improve our final model.  
-
-<a name="Evaluation-on-Group-Project"></a>
-## 2.3. Evaluation on Group Project
-
-All in all, I'm quite satisfied with our group project. For each project, we were able to create at least one model that produced a promising result. For FoodBoost, a recipe week schedule was made using both Machine Learning and Linear Programming. For Cofano, a model has been made that produces promising lay-outs. All the research questions we set up were also answered, so we've also reached our research goals. Not every result is equally solid and some conclusions might bring up even more questions. Though our lay-outs were correctly made, the situation might have been a bit unrealistic.  
-
-I am also satisfied with the team I ended up working with. Though Joanne, Jesse and me rigged the group distribution at the start to end up in the same group together, I'm still happy with the three other teammates I got to work with. Martti's coding skills, supportiveness and ability to quickly adapt to new Data Science methods made him the MVP of the group in my opinion. His models layed a perfect groundwork for the rest of the team. Joanne was disciplined, supportive and a bit stubborn the whole way through. Her useful code functions and leadership during every meeting made her a great asset. Jesse kept our spirits up and almost always knew a way forward when we were stuck. His great work on the linear programming and Baseline models should also not be denied. Sefa seemed to struggle a bit at the start, but showed motivation and willingness to improve. Though his skills at the moment are unknown to me, I like to believe he learned the most out of all of us. Ayrton often seemed overwhelmed, distraught and unmotivated when I worked with him. I feel like he has potential to do much better, but as it stands I can't help but feel a bit dissapointed in him.  
-
-### Presentation Visualizations
-
-**Situation:**  
-At the end of week 10 of the minor we needed to give our second end presentation on our Cofano Containers project. It was up to me and Ayrton to present this to the rest of the minor. The problem was that Ayrton did not know what he could present as he had insufficient amount of information and experience at that time.  
-
-**Task:**  
-The other teammates had to focus on their own work, so it was up to me to prepare all the contents of the presentation and tutor Ayrton about his part.  
-
-**Action:**  
-We decided to work together to make and edit the PowerPoint. When making the slides, I would explain everything that was on it to have Ayrton keep up with what was happening. My own explanation ended up being too vague or not enough, so I eventually decided to put more focus and effort into images that could make things clearer. I would even draw some images myself using Photoshop. I presented the information to him again using the images instead.  
-
-**Result:**  
-Ayrton ended up understanding his part and presented his part correctly. Even though I spent a bit too much time on my part, I still managed to present our work correctly and make things clearer to the audience by using the images.  
-
-**Reflection:**  
-This situation ended up being quite useful for both me and my group. Not only was I able to explain our work to both my teammate and the audience, but I was also able to practice my presenting skills. The effort I put into the visualizations also made me realize how useful they are when giving a presentation. Both for the audience and myself.  
-
-[Back to Table of Contents](#table-of-contents)
-___
-
 <a name="Research-Projects"></a>
-# 3. Research Projects
+# 2. Research Projects
 <a name="Food-Boost"></a>
-## 3.1. Food Boost
+## 2.1. Food Boost
 ### Task Definition
 The first project I worked on was in regards of the Food Boost case. The case focuses on eating more sustainable and healthy dishes and people's personal preferences towards such recipes. In this case it is possible to apply multiple methods. For example, Data Science could be used to predict wether a person likes a certain recipe or not, statistics could be used to estimate which ingredients a person likes or findig optimal combinations of recipes with the use of linear programming.  
 
@@ -203,7 +130,7 @@ We have also set up a Trello Board where we would add multiple tasks, big or sma
 </details>
 
 <a name="Cofano-Containers"></a>
-## 3.2. Cofano Containers
+## 2.2. Cofano Containers
 ### Task Definition
 
 The second project I worked on was in regards of the Cofano Case. This case focuses on the transport of containers from the yard of a terminal to a container ship and vice versa. This transport on the terminal will be handled by a reach stacker. Cofano wants to know what methods could be used to fix the container stacking problem where the end goal is to minimize the cost and delay of the whole proces. There is need for a method that organizes the container stacks on the yard in such a way that minimizes the amount of moves it takes to get certain containers to the ship. This problem can be formulated as an optimization problem where heuristics can be applied to solve it.
@@ -298,9 +225,9 @@ We also created a new Trello Board for this project. The structure mostly stayed
 ___
 
 <a name="Predictive-Analytics"></a>
-# 4. Predictive Analytics
+# 3. Predictive Analytics
 <a name="pa-FoodBoost"></a>
-## 4.1. FoodBoost  
+## 3.1. FoodBoost  
 ### Models  
 
 To predict a person's opinion on thousands of recipes we needed to use Machine Learning. There are too many recipes to do this manually after all. We decided that a person had only two options when rating a recipe. They either liked the recipe (represented by a '1') or did not like the recipe (represented by a '0'). This meant that we were dealing with classes and had to use a classification model.  
@@ -387,7 +314,7 @@ ___
 The code for the operations of this chapter are in [this python notebook](/Python%20Notebooks/Classification%20models%20Foodboost.ipynb).  
 
 <a name="pa-Cofano"></a>
-## 4.2. Cofano Containers 
+## 3.2. Cofano Containers 
 
 We focused on the unloading part of the Container Storage Problem. Because this problem does not have one clear solution and we didn't know how to implement the Cofano data given to us, we would use neither Supervised nor Unsupervised learning. After hearing one of our mentors talking about it, we decided to use Reinforcement Learning. A literature review about [applications of Machine Learning methods in port operations](https://doi.org/10.1016/j.tre.2022.102722) mentioned this method as well and how much potential it has for these kind of problems.  
 
@@ -449,9 +376,9 @@ The code for my inbox/reward function is in [this python notebook](/Python%20Not
 ___
 
 <a name="Domain-Knowledge"></a>
-# 5. Domain Knowledge
+# 4. Domain Knowledge
 <a name="Subject-Field-Introduction"></a>
-## 5.1. Subject Field Introduction 
+## 4.1. Subject Field Introduction 
 ### FoodBoost Field
 
 When making a week schedule of recommended recipes it is important to take into account what the nutrition intake should be for a person who follows this schedule. The amount of calories, protein, fat, etc. should all be balanced in order to have the person eat healthier instead of worse. Some people may not have too much intake of a certain nutrition, so it is also important for people to be able to set their personal preferences.  
@@ -471,7 +398,7 @@ The efficiency of the transport procedures is dependent on the machines that are
 Containers are often transported from or towards a ship. This means the inner lay-out of those ships keep changing during this process. It is important to keep the lay-out balanced at all times by not having too much container weight on only one side of the ship.  
 
 <a name="Literature-Research"></a>
-## 5.2. Literature Research
+## 4.2. Literature Research
 ### For FoodBoost
 
 - [An overview of recommender systems in the healthy food domain](https://doi.org/10.1007/s10844-017-0469-0)
@@ -485,8 +412,10 @@ Containers are often transported from or towards a ship. This means the inner la
 - [Loading, unloading and premarshalling of stacks in storage areas: Surveyand classification](https://doi.org/10.1016/j.ejor.2014.03.011)
 
 <a name="Terminology"></a>
-## 5.3. Terminology
+## 4.3. Terminology
 
+- Machine Learning
+-
 Tags
 
 Linear Programming
@@ -495,9 +424,9 @@ Linear Programming
 ___
 
 <a name="Data-Preprocessing"></a>
-# 6. Data Preprocessing
+# 5. Data Preprocessing
 <a name="dp-FoodBoost"></a>
-## 6.1. FoodBoost 
+## 5.1. FoodBoost 
 
 For the FoodBoost case we received four datasets. These were from Allerhande and contained data on nearly 10.000 recipes. For the final classifiers models I used the `recipes.csv` as a base DataFrame and to have the calorie amounts of each recipe (The nutrients dataset has the calories too, but having the unit 'kcal' at the end makes it a column of strings instead of integers). I used the `ingredients.csv` to display the ingredients each recipe has and make these the features of the predictive model. These were also useful to determine wether a recipe is nut-free or not. I also used the `tags.csv` to determine if a recipe is lunch, diner or something else.  
 
@@ -554,7 +483,7 @@ The Italian cuisine seems to have the most recipes with the Dutch one not far be
 The code for these data operations can be found in [this python notebook](/Python%20Notebooks/FoodBoost%20Data%20Operations.ipynb).
 
 <a name="dp-Cofano"></a>
-## 6.2. Cofano Containers 
+## 5.2. Cofano Containers 
 
 For the Cofano case we received seven datasets. These were about the lay-out of the container yard, the available machines and the transport of containers of Cofano. This data was not as straightforward as the FoodBoost data and contained some confusing terms. To better understand theses datasets Joanne and I analyzed all seven of them. While Joanne examined what data could be useful to us, I examined how all the DataFrames could connect to one another. I ended up with the following information.
 
@@ -580,9 +509,9 @@ The code for this visualization can be found in [this python notebook](/Python%2
 ___
 
 <a name="Communication"></a>
-# 7. Communication
+# 6. Communication
 <a name="Presentations"></a>
-## 7.1. Presentations
+## 6.1. Presentations
 
 These are the presentations I gave, but contributed lightly to:  
 
@@ -605,7 +534,7 @@ These are the presentations I gave and contributed heavily to:
 - [Cofano Presentation Week 18](/Presentations/Cofano%20Presentation%20Week18.pdf)
 
 <a name="Writing-Paper"></a>
-## 7.2. Writing Paper
+## 6.2. Writing Paper
 
 For the paper I was responsible for writing the abstract and part of the results. In the results chapter I wrote about the first evaluation metric used for the model. Besides that, I contributed heavily to the contents of the introduction and the future works by thinking along with Joanne while she wrote these chapters. I also used the received feedback from Edwin and Tony to improve the paper as a whole together with part of the team. Lastly, I did a spell and grammar check by reading the whole paper again.
 
@@ -615,7 +544,7 @@ For the paper I was responsible for writing the abstract and part of the results
 ___
 
 <a name="Python-Notebooks"></a>
-# 8. Python Notebooks
+# 7. Python Notebooks
 ## FoodBoost Notebooks
 
 - [Classification models FoodBoost](/Python%20Notebooks/Classification%20models%20Foodboost.ipynb)
@@ -634,6 +563,80 @@ ___
 ___
 
 <a name="Other-Achievements"></a>
-# 9. Other Achievements
+# 8. Other Achievements
 
 [Back to Table of Contents](#table-of-contents)
+___
+
+<a name="Reflection-and-Evaluation"></a>
+# 9. Reflection and Evaluation
+<a name="Contribution-to-the-Project"></a>
+## 9.1. Contribution to the Project
+
+In the end, I think I was able to contribute much to our two projects. Having multiple groups work on comparable projects always riles up my competitive spirit. This greatly improves my motivation and time I'm willing to invest in both my and my team's tasks. I feel like I also supported the others in their work by bringing up ideas or evaluating their most recent work. For the FoodBoost case I have done much in regard of data preprocessing and model evaluation. For the Cofano case I contributed to the final product by offering ideas on the actions the RL agent could choose and creating the final reward function.  
+
+### Building the reward function
+
+**Situation:**  
+We combined our knowledge to create what would become our final Reinforcement Learning model. This model was already able to produce promising container lay-outs. The model gave an appropriate reward with every container it placed in the yard, but the environment did not include a method that could rate the produced lay-outs at the end. We needed a reward function that could appropriately evaluate the container lay-outs the model produced.  
+
+**Task:**  
+My task was to create a reward function that could produce a scoring value to prove that the model’s lay-outs have indeed improved.  
+
+**Action:**  
+At first, I analyzed our environments thoroughly and realized I could rate a lay-out row by row. A reachstacker can only pick up containers on the long sides after all. With this, I also realized that any container in any row could be reached by two different routes. From both the left and right. Using this knowledge, I created a sub method which would return two routes (as two dictionaries) of any container. My main reward function would determine which one of these two routes was the best by calculating how many containers of lower priority were on both routes. I decided to rate the chosen route on two cases. If the route had no lower priority containers on it, the total score would increase. This amount of increase depended on the size of the whole row. If there were lower priority containers on the route the total score would decrease. The amount of decrease depended on how many of those containers were on the route. Once the main function rated every container in the lay-out a total score is returned.  
+
+**Result:**  
+The function ended up working on yards of any size. I tested it on smaller yards of 2x2x2 and 3x3x2 by manually creating good and bad lay-outs. It returned the desired scores as long as the entire yard space was used. Fortunately, our trained model always produced lay-outs without any space left. This function could finally be used to evaluate the lay-outs.  
+
+**Reflection:**  
+By creating this function, I was able to contribute to the evaluation and validation of the final Reinforcement Learning model. It also made me able to understand the environment more and use the experience I gained for my own forsaken Reinforcement Learning model. I think my work has been very useful to my teammates and the project as a whole, especially when we needed to visualize the results for writing the paper.  
+
+<a name="Learning-Objectives"></a>
+## 9.2. Learning Objectives
+
+This minor caught my eye, because I never had any experience with Data Science. I wanted to learn more about this field and see how useful it could prove to be. I ended up learning more than I initially thought. The first six weeks taught me the basics of Machine Learning. I gained a lot of knowledge about model selection, training, validation and evaluation and feel like I'm able to correctly apply it. In the following weeks I also learned a lot about Reinforcement Learning and Neural Networks. My own research made me understand the trial-and-error cycle and how RL agents could make use of a neural network to train.  
+
+### My Reinforcement Learning research
+
+**Situation:**  
+The first six weeks of the minor had just ended, and we already decided to move on to the Cofano Container case instead of sticking to the FoodBoost case we focused on during that time. We were confident we would spend our remaining weeks on this case. After deciding on our research questions, we quickly realized we would need a model to tackle the problem presented to us. In the end, it was decided we would try to apply Reinforcement Learning to solve this. For the coming two weeks, every teammate was on their own to try to analyze, understand and apply this method.  
+
+**Task:**  
+My task was to learn the basics of Reinforcement Learning and try to apply it to our problem.  
+
+**Action:**  
+The first thing I did was looking for tutorials on creating such a model from scratch. DataCamp was the first platform I searched on. Unfortunately, the courses about RL were limited and used a library which was not available in the Python Notebooks. The next thing I did was look for examples of RL models where the subject would be comparable to ours. This meant finding a model that had to organize objects based on their properties. Eventually, I found a RL model on GitHub that was trained to play Tetris. I wanted to try and replicate the model, so I studied the source code. It was here where I learned about all the necessary classes such a model needs and that the environment really identifies what each RL model is about. The code was still quite complex, so I continued my learning experience with the Gym library. The Gym site explained to me about what the trial-and-error cycle was all about and the basic code you need. By also using their Cartpole environment, I was able to practice too.  
+
+**Result:**  
+As a result of my research, I was able to learn what Reinforcement Learning was about and in what situations it would come in handy. I also learned that to make this RL cycle work you need an interactable environment that identifies the situation and returns a state and reward, as well as an agent that uses a neural network to train itself to eventually choose actions that improve the performance.  
+
+**Reflection:**  
+I am aware I have still much to learn when it comes to Reinforcement Learning, but I still was able to learn a lot from my experience. I feel like I’ve got the basics down already and have a better understanding on how and when it should be applied. I was also able to share my gained knowledge with my team and used it to come up with new ideas that could improve our final model.  
+
+<a name="Evaluation-on-Group-Project"></a>
+## 9.3. Evaluation on Group Project
+
+All in all, I'm quite satisfied with our group project. For each project, we were able to create at least one model that produced a promising result. For FoodBoost, a recipe week schedule was made using both Machine Learning and Linear Programming. For Cofano, a model has been made that produces promising lay-outs. All the research questions we set up were also answered, so we've also reached our research goals. Not every result is equally solid and some conclusions might bring up even more questions. Though our lay-outs were correctly made, the situation might have been a bit unrealistic.  
+
+I am also satisfied with the team I ended up working with. Though Joanne, Jesse and me rigged the group distribution at the start to end up in the same group together, I'm still happy with the three other teammates I got to work with. Martti's coding skills, supportiveness and ability to quickly adapt to new Data Science methods made him the MVP of the group in my opinion. His models layed a perfect groundwork for the rest of the team. Joanne was disciplined, supportive and a bit stubborn the whole way through. Her useful code functions and leadership during every meeting made her a great asset. Jesse kept our spirits up and almost always knew a way forward when we were stuck. His great work on the linear programming and Baseline models should also not be denied. Sefa seemed to struggle a bit at the start, but showed motivation and willingness to improve. Though his skills at the moment are unknown to me, I like to believe he learned the most out of all of us. Ayrton often seemed overwhelmed, distraught and unmotivated when I worked with him. I feel like he has potential to do much better, but as it stands I can't help but feel a bit dissapointed in him.  
+
+### Presentation Visualizations
+
+**Situation:**  
+At the end of week 10 of the minor we needed to give our second end presentation on our Cofano Containers project. It was up to me and Ayrton to present this to the rest of the minor. The problem was that Ayrton did not know what he could present as he had insufficient amount of information and experience at that time.  
+
+**Task:**  
+The other teammates had to focus on their own work, so it was up to me to prepare all the contents of the presentation and tutor Ayrton about his part.  
+
+**Action:**  
+We decided to work together to make and edit the PowerPoint. When making the slides, I would explain everything that was on it to have Ayrton keep up with what was happening. My own explanation ended up being too vague or not enough, so I eventually decided to put more focus and effort into images that could make things clearer. I would even draw some images myself using Photoshop. I presented the information to him again using the images instead.  
+
+**Result:**  
+Ayrton ended up understanding his part and presented his part correctly. Even though I spent a bit too much time on my part, I still managed to present our work correctly and make things clearer to the audience by using the images.  
+
+**Reflection:**  
+This situation ended up being quite useful for both me and my group. Not only was I able to explain our work to both my teammate and the audience, but I was also able to practice my presenting skills. The effort I put into the visualizations also made me realize how useful they are when giving a presentation. Both for the audience and myself.  
+
+[Back to Table of Contents](#table-of-contents)
+___
