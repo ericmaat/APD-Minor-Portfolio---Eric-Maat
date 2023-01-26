@@ -583,6 +583,18 @@ ___
 <a name="Other-Achievements"></a>
 # 8. Other Achievements
 
+<details>
+<summary>List of self-drawn visualizations</summary>
+
+<img src="Images/restrict2.png" width="300"/>
+<img src="Images/restrict1.png" width="300"/>
+<img src="Images/restrict3.png" width="300"/>
+<img src="Images/restrict4.png" width="300"/>
+<img src="Images/restrict5.png" width="300"/>
+<img src="Images/score-container.png" width="300"/>
+
+</details>
+
 [Back to Table of Contents](#table-of-contents)
 ___
 
