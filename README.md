@@ -448,7 +448,7 @@ The code for my inbox/reward function is in [this python notebook](/Python%20Not
 # 5. Domain Knowledge
 <a name="Subject-Field-Introduction"></a>
 ## 5.1. Subject Field Introduction 
-### FoodBoost
+### FoodBoost Field
 
 When making a week schedule of recommended recipes it is important to take into account what the nutrition intake should be for a person who follows this schedule. The amount of calories, protein, fat, etc. should all be balanced in order to have the person eat healthier instead of worse. Some people may not have too much intake of a certain nutrition, so it is also important for people to be able to set their personal preferences.  
 
@@ -456,7 +456,7 @@ Allergies are very important to take into account when creating a recipe schedul
 
 Our research focused heavily on predicting wether a person likes a recipe or not. In this field, it is most important to reduce predictions which classify a recipe as 'liked', while in reality the person disliked the recipe (In our case, False Positives). Though it is also favorable to reduce prediction errors that fall into the False Negative category (especially if the person is a picky eater), such errors do not necessarily affect a good recipe schedule. It is worse to have disliked recipes show up on the schedule than missing out on some recipes that the person might have liked.  
 
-### Cofano Containers
+### Cofano Containers Field
 
 While making a lay-out on the yard, it is important to know what kind of containers are transported. If containers have different sizes you have to be more aware of the limited space on the yard and a stack can only be dedicated to one type of container size. Some containers may also be heavier than others. This means heavy containers can not be stacked on top of lightweighted containers.  
 
