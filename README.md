@@ -468,11 +468,11 @@ Containers are often transported from or towards a ship. This means the inner la
 
 <a name="Literature-Research"></a>
 ## 5.2. Literature Research
-### FoodBoost
+### For FoodBoost
 
 - [An overview of recommender systems in the healthy food domain](https://doi.org/10.1007/s10844-017-0469-0)
 
-### Cofano Containers
+### For Cofano Containers
 
 - [Applications of machine learning methods in port operations – A systematic literature review](https://doi.org/10.1016/j.tre.2022.102722)
 
@@ -609,7 +609,7 @@ For the paper I was responsible for writing the abstract and part of the results
 
 <a name="Python-Notebooks"></a>
 # 8. Python Notebooks
-## FoodBoost
+## FoodBoost Notebooks
 
 - [Classification models FoodBoost](/Python%20Notebooks/Classification%20models%20Foodboost.ipynb)
 
@@ -617,7 +617,7 @@ For the paper I was responsible for writing the abstract and part of the results
 
 - [Data Operations FoodBoost](/Python%20Notebooks/FoodBoost%20Data%20Operations.ipynb)
 
-## Cofano Containers
+## Cofano Containers Notebooks
 
 - [Reinforcement Learning model Cofano](/Python%20Notebooks/Reinforcement%20Learning%20model%20Eric.ipynb)
 
