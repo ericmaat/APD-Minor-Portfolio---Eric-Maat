@@ -2,7 +2,7 @@
 Studentnumber: 20162928  
 Education: Applied Mathematics  
 # <a id="table-of-contents"></a>Table of Contents <!-- omit in toc --> 
-- [1. DataCamp Courses](#1. DataCamp-Courses)
+- [1. DataCamp Courses](#1.-DataCamp-Courses)
 - [Reflection and Evaluation](#Reflection-and-Evaluation)
   - [Contribution to the Project](#Contribution-to-the-Project)
   - [Learning Objectives](#Learning-Objectives)
@@ -26,7 +26,7 @@ Education: Applied Mathematics
 - [Python Notebooks](#Python-Notebooks)
 - [Other Achievements](#Other-Achievements)
 
-# DataCamp Courses
+# 1. DataCamp Courses
 
 ![This is a alt text.](/Images/DatacampEric.png "DataCamp Courses")
 
