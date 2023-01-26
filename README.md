@@ -1,6 +1,10 @@
-# APD-Minor-Portfolio---Eric-Maat  
+# ADS Minor Portfolio Eric-Maat  
+Name: Eric Maat  
 Studentnumber: 20162928  
 Education: Applied Mathematics  
+
+This is my portfolio about my activities during the Applied Data Science minor of 2022/2023  
+
 # <a id="table-of-contents"></a>Table of Contents <!-- omit in toc --> 
 - [1. DataCamp Courses](#DataCamp-Courses)
 - [2. Research Projects](#Research-Projects)
