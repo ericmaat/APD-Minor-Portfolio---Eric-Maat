@@ -2,7 +2,7 @@
 Studentnumber: 20162928  
 Education: Applied Mathematics  
 # <a id="table-of-contents"></a>Table of Contents <!-- omit in toc --> 
-- [DataCamp Courses](#DataCamp-Courses)
+- [1. DataCamp Courses](#1. DataCamp-Courses)
 - [Reflection and Evaluation](#Reflection-and-Evaluation)
   - [Contribution to the Project](#Contribution-to-the-Project)
   - [Learning Objectives](#Learning-Objectives)
