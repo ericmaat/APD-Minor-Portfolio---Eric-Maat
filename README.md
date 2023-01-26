@@ -3,28 +3,28 @@ Studentnumber: 20162928
 Education: Applied Mathematics  
 # <a id="table-of-contents"></a>Table of Contents <!-- omit in toc --> 
 - [1. DataCamp Courses](#DataCamp-Courses)
-- [Reflection and Evaluation](#Reflection-and-Evaluation)
-  - [Contribution to the Project](#Contribution-to-the-Project)
-  - [Learning Objectives](#Learning-Objectives)
-  - [Evaluation on Group Project](#Evaluation-on-Group-Project)
-- [Research Projects](#Research-Projects)
-  - [Food Boost](#Food-Boost)
-  - [Cofano Containers](#Cofano-Containers)
-- [Predictive Analytics](#Predictive-Analytics)
-  - [Food Boost](#pa-FoodBoost)
-  - [Cofano Containers](#pa-Cofano)
-- [Domain Knowledge](#Domain-Knowledge)
-  - [Subject Field Introduction](#Subject-Field-Introduction)
-  - [Literature Research](#Literature-Research)
-  - [Terminology](#Terminology)
-- [Data Preprocessing](#Data-Preprocessing)
-  - [Food Boost](#dp-FoodBoost)
-  - [Cofano Containers](#dp-Cofano)
-- [Communication](#Communication)
-  - [Presentations](#Presentations)
-  - [Writing Paper](#Writing-Paper)
-- [Python Notebooks](#Python-Notebooks)
-- [Other Achievements](#Other-Achievements)
+- [2. Reflection and Evaluation](#Reflection-and-Evaluation)
+  - [2.1. Contribution to the Project](#Contribution-to-the-Project)
+  - [2.2. Learning Objectives](#Learning-Objectives)
+  - [2.3. Evaluation on Group Project](#Evaluation-on-Group-Project)
+- [3. Research Projects](#Research-Projects)
+  - [3.1. Food Boost](#Food-Boost)
+  - [3.2. Cofano Containers](#Cofano-Containers)
+- [4. Predictive Analytics](#Predictive-Analytics)
+  - [4.1. Food Boost](#pa-FoodBoost)
+  - [4.2. Cofano Containers](#pa-Cofano)
+- [5. Domain Knowledge](#Domain-Knowledge)
+  - [5.1. Subject Field Introduction](#Subject-Field-Introduction)
+  - [5.2. Literature Research](#Literature-Research)
+  - [5.3. Terminology](#Terminology)
+- [6. Data Preprocessing](#Data-Preprocessing)
+  - [6.1. Food Boost](#dp-FoodBoost)
+  - [6.2. Cofano Containers](#dp-Cofano)
+- [7. Communication](#Communication)
+  - [7.1. Presentations](#Presentations)
+  - [7.2. Writing Paper](#Writing-Paper)
+- [8. Python Notebooks](#Python-Notebooks)
+- [9. Other Achievements](#Other-Achievements)
 
 <a name="DataCamp-Courses"></a>
 # 1. DataCamp Courses
@@ -57,7 +57,8 @@ The function ended up working on yards of any size. I tested it on smaller yards
 **Reflection:**  
 By creating this function, I was able to contribute to the evaluation and validation of the final Reinforcement Learning model. It also made me able to understand the environment more and use the experience I gained for my own forsaken Reinforcement Learning model. I think my work has been very useful to my teammates and the project as a whole, especially when we needed to visualize the results for writing the paper.  
 
-## Learning Objectives
+<a name="Learning-Objectives"></a>
+## 2.2. Learning Objectives
 
 This minor caught my eye, because I never had any experience with Data Science. I wanted to learn more about this field and see how useful it could prove to be. I ended up learning more than I initially thought. The first six weeks taught me the basics of Machine Learning. I gained a lot of knowledge about model selection, training, validation and evaluation and feel like I'm able to correctly apply it. In the following weeks I also learned a lot about Reinforcement Learning and Neural Networks. My own research made me understand the trial-and-error cycle and how RL agents could make use of a neural network to train.  
 
@@ -78,7 +79,8 @@ As a result of my research, I was able to learn what Reinforcement Learning was 
 **Reflection:**  
 I am aware I have still much to learn when it comes to Reinforcement Learning, but I still was able to learn a lot from my experience. I feel like I’ve got the basics down already and have a better understanding on how and when it should be applied. I was also able to share my gained knowledge with my team and used it to come up with new ideas that could improve our final model.  
 
-## Evaluation on Group Project
+<a name="Evaluation-on-Group-Project"></a>
+## 2.3. Evaluation on Group Project
 
 All in all, I'm quite satisfied with our group project. For each project, we were able to create at least one model that produced a promising result. For FoodBoost, a recipe week schedule was made using both Machine Learning and Linear Programming. For Cofano, a model has been made that produces promising lay-outs. All the research questions we set up were also answered, so we've also reached our research goals. Not every result is equally solid and some conclusions might bring up even more questions. Though our lay-outs were correctly made, the situation might have been a bit unrealistic.  
 
@@ -103,8 +105,10 @@ This situation ended up being quite useful for both me and my group. Not only wa
 
 [Back to Table of Contents](#table-of-contents)
 
-# Research Projects
-## Food Boost
+<a name="Research-Projects"></a>
+# 3. Research Projects
+<a name="Food-Boost"></a>
+## 3.1. Food Boost
 ### Task Definition
 The first project I worked on was in regards of the Food Boost case. The case focuses on eating more sustainable and healthy dishes and people's personal preferences towards such recipes. In this case it is possible to apply multiple methods. For example, Data Science could be used to predict wether a person likes a certain recipe or not, statistics could be used to estimate which ingredients a person likes or findig optimal combinations of recipes with the use of linear programming.  
 
@@ -196,7 +200,8 @@ We have also set up a Trello Board where we would add multiple tasks, big or sma
 <img src="Images/TrelloBoardFB.png" />
 </details>
 
-## Cofano Containers
+<a name="Cofano-Containers"></a>
+## 3.2. Cofano Containers
 ### Task Definition
 
 The second project I worked on was in regards of the Cofano Case. This case focuses on the transport of containers from the yard of a terminal to a container ship and vice versa. This transport on the terminal will be handled by a reach stacker. Cofano wants to know what methods could be used to fix the container stacking problem where the end goal is to minimize the cost and delay of the whole proces. There is need for a method that organizes the container stacks on the yard in such a way that minimizes the amount of moves it takes to get certain containers to the ship. This problem can be formulated as an optimization problem where heuristics can be applied to solve it.
@@ -289,9 +294,10 @@ We also created a new Trello Board for this project. The structure mostly stayed
 
 [Back to Table of Contents](#table-of-contents)
 
-# Predictive Analytics
+<a name="Predictive-Analytics"></a>
+# 4. Predictive Analytics
 <a name="pa-FoodBoost"></a>
-## FoodBoost  
+## 4.1. FoodBoost  
 ### Models  
 
 To predict a person's opinion on thousands of recipes we needed to use Machine Learning. There are too many recipes to do this manually after all. We decided that a person had only two options when rating a recipe. They either liked the recipe (represented by a '1') or did not like the recipe (represented by a '0'). This meant that we were dealing with classes and had to use a classification model.  
@@ -378,7 +384,7 @@ ___
 The code for the operations of this chapter are in [this python notebook](/Python%20Notebooks/Classification%20models%20Foodboost.ipynb).  
 
 <a name="pa-Cofano"></a>
-## Cofano Containers 
+## 4.2. Cofano Containers 
 
 We focused on the unloading part of the Container Storage Problem. Because this problem does not have one clear solution and we didn't know how to implement the Cofano data given to us, we would use neither Supervised nor Unsupervised learning. After hearing one of our mentors talking about it, we decided to use Reinforcement Learning. A literature review about [applications of Machine Learning methods in port operations](https://doi.org/10.1016/j.tre.2022.102722) mentioned this method as well and how much potential it has for these kind of problems.  
 
@@ -438,8 +444,10 @@ The code for my inbox/reward function is in [this python notebook](/Python%20Not
 
 [Back to Table of Contents](#table-of-contents)
 
-# Domain Knowledge
-## Subject Field Introduction 
+<a name="Domain-Knowledge"></a>
+# 5. Domain Knowledge
+<a name="Subject-Field-Introduction"></a>
+## 5.1. Subject Field Introduction 
 ### FoodBoost
 
 When making a week schedule of recommended recipes it is important to take into account what the nutrition intake should be for a person who follows this schedule. The amount of calories, protein, fat, etc. should all be balanced in order to have the person eat healthier instead of worse. Some people may not have too much intake of a certain nutrition, so it is also important for people to be able to set their personal preferences.  
@@ -458,7 +466,8 @@ The efficiency of the transport procedures is dependent on the machines that are
 
 Containers are often transported from or towards a ship. This means the inner lay-out of those ships keep changing during this process. It is important to keep the lay-out balanced at all times by not having too much container weight on only one side of the ship.  
 
-## Literature Research
+<a name="Literature-Research"></a>
+## 5.2. Literature Research
 ### FoodBoost
 
 - [An overview of recommender systems in the healthy food domain](https://doi.org/10.1007/s10844-017-0469-0)
@@ -471,7 +480,8 @@ Containers are often transported from or towards a ship. This means the inner la
 
 - [Loading, unloading and premarshalling of stacks in storage areas: Surveyand classification](https://doi.org/10.1016/j.ejor.2014.03.011)
 
-## Terminology
+<a name="Terminology"></a>
+## 5.3. Terminology
 
 Tags
 
@@ -479,9 +489,10 @@ Linear Programming
 
 [Back to Table of Contents](#table-of-contents)
 
-# Data Preprocessing
+<a name="Data-Preprocessing"></a>
+# 6. Data Preprocessing
 <a name="dp-FoodBoost"></a>
-## FoodBoost 
+## 6.1. FoodBoost 
 
 For the FoodBoost case we received four datasets. These were from Allerhande and contained data on nearly 10.000 recipes. For the final classifiers models I used the `recipes.csv` as a base DataFrame and to have the calorie amounts of each recipe (The nutrients dataset has the calories too, but having the unit 'kcal' at the end makes it a column of strings instead of integers). I used the `ingredients.csv` to display the ingredients each recipe has and make these the features of the predictive model. These were also useful to determine wether a recipe is nut-free or not. I also used the `tags.csv` to determine if a recipe is lunch, diner or something else.  
 
@@ -538,7 +549,7 @@ The Italian cuisine seems to have the most recipes with the Dutch one not far be
 The code for these data operations can be found in [this python notebook](/Python%20Notebooks/FoodBoost%20Data%20Operations.ipynb).
 
 <a name="dp-Cofano"></a>
-## Cofano Containers 
+## 6.2. Cofano Containers 
 
 For the Cofano case we received seven datasets. These were about the lay-out of the container yard, the available machines and the transport of containers of Cofano. This data was not as straightforward as the FoodBoost data and contained some confusing terms. To better understand theses datasets Joanne and I analyzed all seven of them. While Joanne examined what data could be useful to us, I examined how all the DataFrames could connect to one another. I ended up with the following information.
 
@@ -562,9 +573,10 @@ The code for this visualization can be found in [this python notebook](/Python%2
 
 [Back to Table of Contents](#table-of-contents)
 
-# Communication
-
-## Presentations
+<a name="Communication"></a>
+# 7. Communication
+<a name="Presentations"></a>
+## 7.1. Presentations
 
 These are the presentations I gave, but contributed lightly to:  
 
@@ -586,7 +598,8 @@ These are the presentations I gave and contributed heavily to:
 
 - [Cofano Presentation Week 18](/Presentations/Cofano%20Presentation%20Week18.pdf)
 
-## Writing Paper
+<a name="Writing-Paper"></a>
+## 7.2. Writing Paper
 
 For the paper I was responsible for writing the abstract and part of the results. In the results chapter I wrote about the first evaluation metric used for the model. Besides that, I contributed heavily to the contents of the introduction and the future works by thinking along with Joanne while she wrote these chapters. I also used the received feedback from Edwin and Tony to improve the paper as a whole together with part of the team. Lastly, I did a spell and grammar check by reading the whole paper again.
 
@@ -594,7 +607,8 @@ For the paper I was responsible for writing the abstract and part of the results
 
 [Back to Table of Contents](#table-of-contents)
 
-# Python Notebooks
+<a name="Python-Notebooks"></a>
+# 8. Python Notebooks
 ## FoodBoost
 
 - [Classification models FoodBoost](/Python%20Notebooks/Classification%20models%20Foodboost.ipynb)
@@ -611,6 +625,7 @@ For the paper I was responsible for writing the abstract and part of the results
 
 - [Data Visualization Cofano](/Python%20Notebooks/Cofano%20Data%20Visualization.ipynb)
 
-# Other Achievements
+<a name="Other-Achievements"></a>
+# 9. Other Achievements
 
 [Back to Table of Contents](#table-of-contents)
