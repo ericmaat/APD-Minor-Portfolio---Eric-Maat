@@ -163,7 +163,7 @@ Having the least amount of boxed in containers in the yard lay-out is our top pr
 
 _**"1. What method(s)/heuristic(s) have been used to solve the container stacking problem in the past?"**_  
 
-I have found several articles on heuristic methods. Some used there own version on a Linear Programming method, others used a certain "GRASP algorithm" to tackle the problem. All of those were methods that could be applied with the big amount of constraints the container stacking problem introduced. After a while, we found out that reinforcement learning was a popular approach for these kind of problems. We delved deeper into what this method was about and then decided we wanted to use this for our final model.  
+I have found several articles on heuristic methods. Some used there own version of a Linear Programming method, others used a certain "GRASP algorithm" to tackle the problem. All of those were methods that could be applied with the big amount of constraints the container stacking problem introduced. After a while, we found out that reinforcement learning was a popular approach for these kind of problems. We delved deeper into what this method was about and then decided we wanted to use this for our final model.  
 
 _**"2. What defines a move?"**_  
 
@@ -342,7 +342,7 @@ I used the [Gym library](https://gymnasium.farama.org/api/env/) and their enviro
 
 </details>
 
-I included a step and reset method. The step method would use the given action to put a container (1, 2 or 3) in the environment and would return the observation, reward and wether the game is done or not. A game would end when either the yard is full, no container can be added to the current lay-out, or the ship has no containers left to unload. In one of these cases the environment would be reset for the next game.
+I included a step and reset method. The step method would use the given action to put a container (1, 2 or 3) in the environment and would return the observation, reward and wether the game is done or not. A game would end when either the yard is full, no container can be added to the current lay-out, or the ship has no containers left to unload. In any of these cases the environment would be reset for the next game.
 
 ### The Agent
 
@@ -414,11 +414,29 @@ Containers are often transported from or towards a ship. This means the inner la
 <a name="Terminology"></a>
 ## 4.3. Terminology
 
-- Machine Learning
--
-Tags
+<details>
+<summary>List of Definitions</summary>
 
-Linear Programming
+- **Recipe Week Schedule:** A food menu consisting of selected dishes for each day of the week
+- **Allergen:** Food or anything else that causes an allergic reaction
+- **Nutrients:** The compounds in food that keep us healthy, like calories, protein, etc.
+- **Tags:** Words or phrases used on sites to describe content. In our case, it describes recipes
+- **The Container Stacking Problem:** A problem where the placements and stacking of containers is important to improve the ship port's efficiency
+- **Move:** The transportation of one container from one place to another
+- **Terminal:** A location on a ship port where goods are (un)loaded
+- **Yard:** A location on the port where containers are stored before and after a sailing
+- **Machine Learning:** A computer program that learns to improve actions based on experiences to optimally perform a task
+- **Classifier:** A model that optimally estimates to which class a data point belongs
+- **Hyperparameter:** A valuealues that are set before the learning process of a model begins
+- **Cross Validation:** A method used for model evaluation by dividing data into training and validation segments
+- **Overfitting:** A model's behaviour where it predicts accurately for training data, but not for new data
+- **Linear Programming:** A mathematical modelling method where a linear function is either maximized or minimized while following certain restrictions
+- **Reinforcement Learning:** A Machine Learning training method where chosen actions are rewarded or penalized.
+- **Environment:** The framing of a problem or process that is changed by actions. An agent interacts with this
+- **Agent:** The learner and one that choses the actions performed on the environment
+- **Neural network:** A method that teaches computers to process data in a way that is comparable to the human brain  
+
+</details>
 
 [Back to Table of Contents](#table-of-contents)
 ___
