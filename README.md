@@ -32,8 +32,11 @@ Education: Applied Mathematics
 ![This is a alt text.](/Images/DatacampEric.png "DataCamp Courses")
 
 [Back to Table of Contents](#table-of-contents)
-# Reflection and Evaluation
-## Contribution to the Project
+
+<a name="Reflection-and-Evaluation"></a>
+# 2. Reflection and Evaluation
+<a name="Contribution-to-the-Project"></a>
+## 2.1. Contribution to the Project
 
 In the end, I think I was able to contribute much to our two projects. Having multiple groups work on comparable projects always riles up my competitive spirit. This greatly improves my motivation and time I'm willing to invest in both my and my team's tasks. I feel like I also supported the others in their work by bringing up ideas or evaluating their most recent work. For the FoodBoost case I have done much in regard of data preprocessing and model evaluation. For the Cofano case I contributed to the final product by offering ideas on the actions the RL agent could choose and creating the final reward function.  
 
