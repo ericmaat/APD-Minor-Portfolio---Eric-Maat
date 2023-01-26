@@ -26,7 +26,7 @@ Education: Applied Mathematics
 - [Python Notebooks](#Python-Notebooks)
 - [Other Achievements](#Other-Achievements)
 
-<a name="DataCamp Courses"></a>
+<a name="DataCamp-Courses"></a>
 # 1. DataCamp Courses
 
 ![This is a alt text.](/Images/DatacampEric.png "DataCamp Courses")
