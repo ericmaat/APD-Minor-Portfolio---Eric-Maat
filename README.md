@@ -1,4 +1,4 @@
-# ADS Minor Portfolio Eric-Maat  
+# ADS Minor Portfolio Eric Maat  
 Name: Eric Maat  
 Studentnumber: 20162928  
 Education: Applied Mathematics  
